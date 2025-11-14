@@ -1,1092 +1,1152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>2025 Oregon Treasures Quest Guide</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'oregon-teal': '#00363b',
-            'oregon-blue': '#205e9e',
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2025 Oregon Treasures Quest Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'oregon-teal': '#00363b',
+              'oregon-blue': '#205e9e',
+            },
           },
         },
-      },
-    };
-  </script>
-</head>
-<body class="bg-gray-50">
+      };
+    </script>
+  </head>
+  <body class="bg-gray-50">
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+      <div class="container mx-auto px-4 py-3">
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between gap-3"
+        >
+          <!-- Home link -->
+          <div class="flex items-center">
+            <a
+              href="index.html"
+              class="text-oregon-teal hover:text-oregon-blue font-semibold text-lg"
+            >
+              🏠 Oregon Treasures Quest
+            </a>
+          </div>
 
-  <nav class="bg-white shadow-md sticky top-0 z-50">
-    <div class="container mx-auto px-4 py-3">
-      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-        <!-- Home link -->
-        <div class="flex items-center">
-          <a href="index.html" class="text-oregon-teal hover:text-oregon-blue font-semibold text-lg">
-            🏠 Oregon Treasures Quest
+          <!-- County selector and navigation -->
+          <div
+            class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3"
+          >
+            <!-- County dropdown -->
+            <select
+              onchange="if(this.value) window.location.href=this.value"
+              class="px-4 py-2 border border-gray-300 rounded bg-white text-gray-800 text-sm font-medium cursor-pointer hover:border-oregon-blue focus:outline-none focus:ring-2 focus:ring-oregon-blue"
+            >
+              <option value="">Jump to County...</option>
+
+              <option value="counties/baker-county.html">Baker County</option>
+              <option value="counties/benton-county.html">Benton County</option>
+              <option value="counties/clackamas-county.html">
+                Clackamas County
+              </option>
+              <option value="counties/clatsop-county.html">
+                Clatsop County
+              </option>
+              <option value="counties/columbia-county.html">
+                Columbia County
+              </option>
+              <option value="counties/coos-county.html">Coos County</option>
+              <option value="counties/crook-county.html">Crook County</option>
+              <option value="counties/curry-county.html">Curry County</option>
+              <option value="counties/deschutes-county.html">
+                Deschutes County
+              </option>
+              <option value="counties/douglas-county.html">
+                Douglas County
+              </option>
+              <option value="counties/gilliam-county.html">
+                Gilliam County
+              </option>
+              <option value="counties/grant-county.html">Grant County</option>
+              <option value="counties/harney-county.html">Harney County</option>
+              <option value="counties/hood-river-county.html">
+                Hood River County
+              </option>
+              <option value="counties/jackson-county.html">
+                Jackson County
+              </option>
+              <option value="counties/jefferson-county.html">
+                Jefferson County
+              </option>
+              <option value="counties/josephine-county.html">
+                Josephine County
+              </option>
+              <option value="counties/klamath-county.html">
+                Klamath County
+              </option>
+              <option value="counties/lake-county.html">Lake County</option>
+              <option value="counties/lane-county.html">Lane County</option>
+              <option value="counties/lincoln-county.html">
+                Lincoln County
+              </option>
+              <option value="counties/linn-county.html">Linn County</option>
+              <option value="counties/malheur-county.html">
+                Malheur County
+              </option>
+              <option value="counties/marion-county.html">Marion County</option>
+              <option value="counties/morrow-county.html">Morrow County</option>
+              <option value="counties/multnomah-county.html">
+                Multnomah County
+              </option>
+              <option value="counties/polk-county.html">Polk County</option>
+              <option value="counties/sherman-county.html">
+                Sherman County
+              </option>
+              <option value="counties/tillamook-county.html">
+                Tillamook County
+              </option>
+              <option value="counties/umatilla-county.html">
+                Umatilla County
+              </option>
+              <option value="counties/union-county.html">Union County</option>
+              <option value="counties/wallowa-county.html">
+                Wallowa County
+              </option>
+              <option value="counties/wasco-county.html">Wasco County</option>
+              <option value="counties/washington-county.html">
+                Washington County
+              </option>
+              <option value="counties/wheeler-county.html">
+                Wheeler County
+              </option>
+              <option value="counties/yamhill-county.html">
+                Yamhill County
+              </option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-oregon-teal text-white">
+      <div class="container mx-auto px-4 py-8 md:py-12">
+        <div class="text-center">
+          <img
+            src="images/Image_001.png"
+            alt="Oregon Landscape"
+            class="mx-auto max-w-full h-auto mb-6 rounded-lg shadow-lg"
+          />
+          <h1 class="text-3xl md:text-5xl font-bold mb-4">
+            2025 Guide to Oregon's Treasures
+          </h1>
+          <p class="text-lg md:text-xl italic">
+            Treasures worth exploring in each of Oregon's 36 counties
+          </p>
+          <p class="text-lg md:text-xl italic">
+            Brought to you by Oregon's U.S. Senator Jeff Merkley
+          </p>
+          <img
+            src="images/Image_002.png"
+            alt="Senator Logo"
+            class="mx-auto mt-6 max-w-xs"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+      <!-- Counties Grid -->
+      <section id="counties" class="mb-8">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center"
+        >
+          Explore Oregon's 36 Counties
+        </h2>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
+        >
+          <a
+            href="counties/baker-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_009.jpg"
+                alt="National Historic Oregon Trail Interpretive Center"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Baker County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">
+                National Historic Oregon Trail Interpretive Center
+              </p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/benton-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_012.jpg"
+                alt="Marys Peak"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Benton County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">Marys Peak</p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/clackamas-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_015.jpg"
+                alt="Timberline Lodge"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Clackamas County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">Timberline Lodge</p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/clatsop-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_018.jpg"
+                alt="Shipwreck of the Peter Iredale"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Clatsop County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">
+                Shipwreck of the Peter Iredale
+              </p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/columbia-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_021.jpg"
+                alt="Scappoose Bay"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Columbia County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">
+                Scappoose Bay Marine Park
+              </p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/coos-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_024.jpg"
+                alt="South Slough National Estuarine Research Reserve"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Coos County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">
+                South Slough Research Reserve Interpretive Center and Hidden
+                Creek Trail
+              </p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/crook-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_027.jpg"
+                alt="Abandoned mines at Ochoco National Forest"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Crook County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">
+                Explore the Ochoco Forest Mines
+              </p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/curry-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_030.jpg"
+                alt="Cape Blanco Lighthouse"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Curry County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">
+                Cape Blanco State Park and Lighthouse
+              </p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/deschutes-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_033.jpg"
+                alt="Smith Rock State Park"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Deschutes County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">
+                Smith Rock State Park
+              </p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/douglas-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_036.jpg"
+                alt="Oregon Dunes National Recreation Area"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Douglas County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">
+                Oregon Dunes National Recreation Area
+              </p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/gilliam-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_039.jpg"
+                alt="Cottonwood Canyon State Park"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Gilliam County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">
+                Cottonwood Canyon State Park
+              </p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/grant-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_042.jpg"
+                alt="Thomas Condon Visitor Center fossil exhibit"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Grant County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">
+                John Day Fossil Beds - Sheep Rock Unit and Thomas Condon Visitor
+                Center
+              </p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/harney-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_045.jpg"
+                alt="The Alvord Desert"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Harney County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">Alvord Desert</p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/hood-river-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_048.jpg"
+                alt="The Event Site in Hood River"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Hood River County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">
+                The Spit and Event Site
+              </p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/jackson-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_051.jpg"
+                alt="Oregon Shakespeare Festival"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Jackson County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">
+                See a Play at the Oregon Shakespeare Festival
+              </p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/jefferson-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_054.jpg"
+                alt="The Cove Palisades State Park"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Jefferson County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">
+                The Cove Palisades State Park
+              </p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/josephine-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_057.jpg"
+                alt="Oregon Caves National Monument and Preserve"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Josephine County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">The Oregon Caves</p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/klamath-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_060.jpg"
+                alt="Crater Lake National Park"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Klamath County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">
+                Crater Lake National Park
+              </p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/lake-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_063.jpg"
+                alt="Fort Rock State Natural Area"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Lake County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">Fort Rock</p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/lane-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_066.jpg"
+                alt="Dorena Covered Bridge"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Lane County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">
+                Historic Covered Bridges
+              </p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/lincoln-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_069.jpg"
+                alt="Cascade Head"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Lincoln County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">Cascade Head</p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/linn-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_072.jpg"
+                alt="Tamolitch Blue Pool"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Linn County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">
+                Tamolitch Blue Pool
+              </p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/malheur-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_075.jpg"
+                alt="Owyhee Canyonlands"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Malheur County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">
+                Owyhee Canyonlands
+              </p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/marion-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_078.jpg"
+                alt="Oregon State Capitol"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Marion County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">
+                Oregon State Capitol
+              </p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/morrow-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_081.jpg"
+                alt="Blue Mountain Scenic Byway"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Morrow County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">
+                Blue Mountain Scenic Byway
+              </p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/multnomah-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_084.jpg"
+                alt="Multnomah Falls"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Multnomah County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">Multnomah Falls</p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/polk-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_087.jpg"
+                alt="Valley of the Giants"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Polk County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">
+                Valley of the Giants
+              </p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/sherman-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_090.jpg"
+                alt="Macks Canyon Recreation Site"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Sherman County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">
+                Macks Canyon Recreation Site
+              </p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/tillamook-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_093.jpg"
+                alt="Cape Kiwanda"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Tillamook County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">Cape Kiwanda</p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/umatilla-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_096.jpg"
+                alt="Hat Rock State Park"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Umatilla County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">
+                Hat Rock State Park
+              </p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/union-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_099.jpg"
+                alt="Anthony Lakes Mountain Resort"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Union County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">
+                Anthony Lakes Recreation
+              </p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/wallowa-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_102.jpg"
+                alt="Wallowa Lake"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Wallowa County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">Wallowa Lake</p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/wasco-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_105.jpg"
+                alt="Shaniko Ghost Town"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Wasco County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">
+                Shaniko Ghost Town
+              </p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/washington-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_108.jpg"
+                alt="The Tualatin River National Wildlife Refuge"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Washington County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">
+                The Tualatin River National Wildlife Refuge
+              </p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/wheeler-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_111.jpg"
+                alt="John Day Fossil Beds – Painted Hills Unit"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Wheeler County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">
+                John Day Fossil Beds – Painted Hills Unit
+              </p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="counties/yamhill-county.html"
+            class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            <div class="aspect-video w-full overflow-hidden bg-gray-200">
+              <img
+                src="images/Image_114.jpg"
+                alt="Evergreen Aviation and Space Museum"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3
+                class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2"
+              >
+                Yamhill County
+              </h3>
+              <p class="text-sm text-gray-600 line-clamp-2">
+                Evergreen Aviation and Space Museum
+              </p>
+              <div class="mt-3 text-oregon-blue text-sm font-semibold">
+                Learn more →
+              </div>
+            </div>
           </a>
         </div>
-        
-        <!-- County selector and navigation -->
-        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
-          
-          
-          <!-- County dropdown -->
-          <select onchange="if(this.value) window.location.href=this.value" class="px-4 py-2 border border-gray-300 rounded bg-white text-gray-800 text-sm font-medium cursor-pointer hover:border-oregon-blue focus:outline-none focus:ring-2 focus:ring-oregon-blue">
-            <option value="">Jump to County...</option>
-            
-            <option value="counties/baker-county.html" >
-              Baker County
-            </option>
-            <option value="counties/benton-county.html" >
-              Benton County
-            </option>
-            <option value="counties/clackamas-county.html" >
-              Clackamas County
-            </option>
-            <option value="counties/clatsop-county.html" >
-              Clatsop County
-            </option>
-            <option value="counties/columbia-county.html" >
-              Columbia County
-            </option>
-            <option value="counties/coos-county.html" >
-              Coos County
-            </option>
-            <option value="counties/crook-county.html" >
-              Crook County
-            </option>
-            <option value="counties/curry-county.html" >
-              Curry County
-            </option>
-            <option value="counties/deschutes-county.html" >
-              Deschutes County
-            </option>
-            <option value="counties/douglas-county.html" >
-              Douglas County
-            </option>
-            <option value="counties/gilliam-county.html" >
-              Gilliam County
-            </option>
-            <option value="counties/grant-county.html" >
-              Grant County
-            </option>
-            <option value="counties/harney-county.html" >
-              Harney County
-            </option>
-            <option value="counties/hood-river-county.html" >
-              Hood River County
-            </option>
-            <option value="counties/jackson-county.html" >
-              Jackson County
-            </option>
-            <option value="counties/jefferson-county.html" >
-              Jefferson County
-            </option>
-            <option value="counties/josephine-county.html" >
-              Josephine County
-            </option>
-            <option value="counties/klamath-county.html" >
-              Klamath County
-            </option>
-            <option value="counties/lake-county.html" >
-              Lake County
-            </option>
-            <option value="counties/lane-county.html" >
-              Lane County
-            </option>
-            <option value="counties/lincoln-county.html" >
-              Lincoln County
-            </option>
-            <option value="counties/linn-county.html" >
-              Linn County
-            </option>
-            <option value="counties/malheur-county.html" >
-              Malheur County
-            </option>
-            <option value="counties/marion-county.html" >
-              Marion County
-            </option>
-            <option value="counties/morrow-county.html" >
-              Morrow County
-            </option>
-            <option value="counties/multnomah-county.html" >
-              Multnomah County
-            </option>
-            <option value="counties/polk-county.html" >
-              Polk County
-            </option>
-            <option value="counties/sherman-county.html" >
-              Sherman County
-            </option>
-            <option value="counties/tillamook-county.html" >
-              Tillamook County
-            </option>
-            <option value="counties/umatilla-county.html" >
-              Umatilla County
-            </option>
-            <option value="counties/union-county.html" >
-              Union County
-            </option>
-            <option value="counties/wallowa-county.html" >
-              Wallowa County
-            </option>
-            <option value="counties/wasco-county.html" >
-              Wasco County
-            </option>
-            <option value="counties/washington-county.html" >
-              Washington County
-            </option>
-            <option value="counties/wheeler-county.html" >
-              Wheeler County
-            </option>
-            <option value="counties/yamhill-county.html" >
-              Yamhill County
-            </option>
-          </select>
+      </section>
+    </main>
+
+    <footer class="bg-oregon-teal text-white mt-12">
+      <div class="container mx-auto px-4 py-8">
+        <div class="text-center">
+          <p class="mb-2">2025 Oregon Treasures Quest Guide</p>
+          <p class="text-sm opacity-75">
+            Brought to you by Oregon's U.S. Senator Jeff Merkley
+          </p>
+          <p class="text-sm opacity-75 mt-2">
+            <a
+              href="https://www.merkley.senate.gov/"
+              target="_blank"
+              rel="noopener"
+              class="hover:text-gray-300 underline"
+            >
+              Visit merkley.senate.gov
+            </a>
+          </p>
         </div>
       </div>
-    </div>
-  </nav>
-
-<!-- Header -->
-<header class="bg-oregon-teal text-white">
-  <div class="container mx-auto px-4 py-8 md:py-12">
-    <div class="text-center">
-      <img
-        src="images/Image_001.png"
-        alt="Oregon Landscape"
-        class="mx-auto max-w-full h-auto mb-6 rounded-lg shadow-lg"
-      />
-      <h1 class="text-3xl md:text-5xl font-bold mb-4">
-        2025 Guide to Oregon's Treasures
-      </h1>
-      <p class="text-lg md:text-xl italic">
-        Treasures worth exploring in each of Oregon's 36 counties
-      </p>
-      <p class="text-lg md:text-xl italic">
-        Brought to you by Oregon's U.S. Senator Jeff Merkley
-      </p>
-      <img
-        src="images/Image_002.png"
-        alt="Senator Logo"
-        class="mx-auto mt-6 max-w-xs"
-      />
-    </div>
-  </div>
-</header>
-
-<!-- Main Content -->
-<main class="container mx-auto px-4 py-8">
-  <!-- Introduction Section -->
-  <section id="intro" class="bg-white rounded-lg shadow-md p-6 md:p-8 mb-8">
-    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">
-      A NOTE FROM JEFF
-    </h2>
-
-    <div class="prose max-w-none space-y-4 text-gray-700">
-      <p class="text-center">
-        Oregon is the most spectacular place. Every one of our 36 counties
-        has exciting and rewarding places to explore. In 2024, hundreds of
-        people participated in the first Oregon Treasures Quest Challenge. I
-        hope this book, now in its second year, will help you find and enjoy
-        sites throughout the state.
-      </p>
-
-      <p class="text-center">
-        And should you choose to accept it, we offer you the 2025 Oregon
-        Treasures Quest Challenge.
-      </p>
-
-      <p class="text-center">
-        Visit at least 10 different counties between January 1, 2025 and
-        November 1, 2025 to participate in the Oregon Treasures Quest
-        Challenge. To qualify for this challenge, you must visit sites that
-        are listed in the main descriptions or the "You May Also Want to
-        Explore..." section of this book. Document your visits by sending us
-        selfies with the sites in the background, and if you reach Oregon
-        Ranger status, you will win an invitation to the 2025 Oregon
-        Treasures Quest Party, to be held near the end of the year, probably
-        mid-November.
-      </p>
-
-      <!-- Challenge Levels Table -->
-      <div class="my-8">
-        <table class="w-full max-w-2xl mx-auto border-collapse border border-gray-300">
-          <thead>
-            <tr class="bg-gray-100">
-              <th class="border border-gray-300 px-4 py-3 text-left font-bold">
-                Visit:
-              </th>
-              <th class="border border-gray-300 px-4 py-3 text-left font-bold">
-                And be recognized as an:
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="border border-gray-300 px-4 py-3">10 counties</td>
-              <td class="border border-gray-300 px-4 py-3">Oregon Apprentice</td>
-            </tr>
-            <tr class="bg-gray-50">
-              <td class="border border-gray-300 px-4 py-3">18 counties</td>
-              <td class="border border-gray-300 px-4 py-3">Oregon Journeyer</td>
-            </tr>
-            <tr>
-              <td class="border border-gray-300 px-4 py-3">27 counties</td>
-              <td class="border border-gray-300 px-4 py-3">Oregon Ranger</td>
-            </tr>
-            <tr class="bg-gray-50">
-              <td class="border border-gray-300 px-4 py-3">36 counties</td>
-              <td class="border border-gray-300 px-4 py-3">Oregon Master</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <p class="text-center font-semibold">
-        Submit your photos to:
-        <a href="mailto:OregonTreasures@merkley.senate.gov" class="text-oregon-blue hover:underline">
-          OregonTreasures@merkley.senate.gov
-        </a>
-      </p>
-
-      <p class="text-center text-sm italic">
-        All are welcome, regardless of age.
-      </p>
-
-      <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 my-6">
-        <p class="font-semibold text-yellow-800 mb-2">Before You Go:</p>
-        <ul class="list-disc list-inside text-yellow-800 space-y-1 text-sm">
-          <li>Check websites for hours of operation, fees, and reservation requirements</li>
-          <li>Many outdoor sites have seasonal closures - verify accessibility before traveling</li>
-          <li>Pack extra water, fuel, and essentials for remote locations</li>
-          <li>Respect wildlife, stay on trails, and leave no trace</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Counties Grid -->
-  <section id="counties" class="mb-8">
-    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">
-      Explore Oregon's 36 Counties
-    </h2>
-    
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-      
-      <a href="counties/baker-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_009.jpg" 
-            alt="National Historic Oregon Trail Interpretive Center"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Baker County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            National Historic Oregon Trail Interpretive Center
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/benton-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_012.jpg" 
-            alt="Marys Peak"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Benton County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            Marys Peak
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/clackamas-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_015.jpg" 
-            alt="Timberline Lodge"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Clackamas County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            Timberline Lodge
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/clatsop-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_018.jpg" 
-            alt="Shipwreck of the Peter Iredale"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Clatsop County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            Shipwreck of the Peter Iredale
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/columbia-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_021.jpg" 
-            alt="Scappoose Bay"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Columbia County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            Scappoose Bay Marine Park
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/coos-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_024.jpg" 
-            alt="South Slough National Estuarine Research Reserve"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Coos County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            South Slough Research Reserve Interpretive Center and Hidden Creek Trail
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/crook-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_027.jpg" 
-            alt="Abandoned mines at Ochoco National Forest"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Crook County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            Explore the Ochoco Forest Mines
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/curry-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_030.jpg" 
-            alt="Cape Blanco Lighthouse"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Curry County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            Cape Blanco State Park and Lighthouse
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/deschutes-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_033.jpg" 
-            alt="Smith Rock State Park"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Deschutes County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            Smith Rock State Park
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/douglas-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_036.jpg" 
-            alt="Oregon Dunes National Recreation Area"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Douglas County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            Oregon Dunes National Recreation Area
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/gilliam-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_039.jpg" 
-            alt="Cottonwood Canyon State Park"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Gilliam County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            Cottonwood Canyon State Park
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/grant-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_042.jpg" 
-            alt="Thomas Condon Visitor Center fossil exhibit"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Grant County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            John Day Fossil Beds - Sheep Rock Unit and Thomas Condon Visitor Center
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/harney-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_045.jpg" 
-            alt="The Alvord Desert"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Harney County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            Alvord Desert
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/hood-river-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_048.jpg" 
-            alt="The Event Site in Hood River"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Hood River County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            The Spit and Event Site
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/jackson-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_051.jpg" 
-            alt="Oregon Shakespeare Festival"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Jackson County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            See a Play at the Oregon Shakespeare Festival
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/jefferson-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_054.jpg" 
-            alt="The Cove Palisades State Park"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Jefferson County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            The Cove Palisades State Park
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/josephine-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_057.jpg" 
-            alt="Oregon Caves National Monument and Preserve"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Josephine County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            The Oregon Caves
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/klamath-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_060.jpg" 
-            alt="Crater Lake National Park"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Klamath County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            Crater Lake National Park
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/lake-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_063.jpg" 
-            alt="Fort Rock State Natural Area"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Lake County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            Fort Rock
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/lane-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_066.jpg" 
-            alt="Dorena Covered Bridge"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Lane County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            Historic Covered Bridges
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/lincoln-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_069.jpg" 
-            alt="Cascade Head"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Lincoln County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            Cascade Head
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/linn-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_072.jpg" 
-            alt="Tamolitch Blue Pool"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Linn County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            Tamolitch Blue Pool
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/malheur-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_075.jpg" 
-            alt="Owyhee Canyonlands"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Malheur County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            Owyhee Canyonlands
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/marion-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_078.jpg" 
-            alt="Oregon State Capitol"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Marion County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            Oregon State Capitol
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/morrow-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_081.jpg" 
-            alt="Blue Mountain Scenic Byway"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Morrow County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            Blue Mountain Scenic Byway
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/multnomah-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_084.jpg" 
-            alt="Multnomah Falls"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Multnomah County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            Multnomah Falls
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/polk-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_087.jpg" 
-            alt="Valley of the Giants"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Polk County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            Valley of the Giants
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/sherman-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_090.jpg" 
-            alt="Macks Canyon Recreation Site"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Sherman County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            Macks Canyon Recreation Site
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/tillamook-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_093.jpg" 
-            alt="Cape Kiwanda"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Tillamook County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            Cape Kiwanda
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/umatilla-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_096.jpg" 
-            alt="Hat Rock State Park"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Umatilla County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            Hat Rock State Park
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/union-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_099.jpg" 
-            alt="Anthony Lakes Mountain Resort"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Union County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            Anthony Lakes Recreation
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/wallowa-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_102.jpg" 
-            alt="Wallowa Lake"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Wallowa County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            Wallowa Lake
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/wasco-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_105.jpg" 
-            alt="Shaniko Ghost Town"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Wasco County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            Shaniko Ghost Town
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/washington-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_108.jpg" 
-            alt="The Tualatin River National Wildlife Refuge"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Washington County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            The Tualatin River National Wildlife Refuge
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/wheeler-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_111.jpg" 
-            alt="John Day Fossil Beds – Painted Hills Unit"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Wheeler County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            John Day Fossil Beds – Painted Hills Unit
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-      <a href="counties/yamhill-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
-          <img 
-            src="images/Image_114.jpg" 
-            alt="Evergreen Aviation and Space Museum"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-800 group-hover:text-oregon-blue mb-2">
-            Yamhill County
-          </h3>
-          <p class="text-sm text-gray-600 line-clamp-2">
-            Evergreen Aviation and Space Museum
-          </p>
-          <div class="mt-3 text-oregon-blue text-sm font-semibold">
-            Learn more →
-          </div>
-        </div>
-      </a>
-      
-    </div>
-  </section>
-</main>
-
-
-  <footer class="bg-oregon-teal text-white mt-12">
-    <div class="container mx-auto px-4 py-8">
-      <div class="text-center">
-        <p class="mb-2">2025 Oregon Treasures Quest Guide</p>
-        <p class="text-sm opacity-75">Brought to you by Oregon's U.S. Senator Jeff Merkley</p>
-        <p class="text-sm opacity-75 mt-2">
-          <a href="https://www.merkley.senate.gov/" target="_blank" rel="noopener" class="hover:text-gray-300 underline">
-            Visit merkley.senate.gov
-          </a>
-        </p>
-      </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
