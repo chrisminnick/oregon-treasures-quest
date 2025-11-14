@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jefferson County - Oregon Treasures Quest</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'oregon-teal': '#00363b',
+            'oregon-blue': '#205e9e',
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-gray-50">
+
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-3">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+        <!-- Home link -->
+        <div class="flex items-center">
+          <a href="../index.html" class="text-oregon-teal hover:text-oregon-blue font-semibold text-lg">
+            🏠 Oregon Treasures Quest
+          </a>
+        </div>
+        
+        <!-- County selector and navigation -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+          
+          <!-- Previous/Next buttons -->
+          <div class="flex gap-2">
+            
+            <a href="jackson-county.html" class="flex-1 sm:flex-none px-4 py-2 bg-gray-200 hover:bg-gray-300 text-gray-800 rounded text-center text-sm font-medium">
+              ← Jackson County
+            </a>
+            
+            
+            
+            <a href="josephine-county.html" class="flex-1 sm:flex-none px-4 py-2 bg-gray-200 hover:bg-gray-300 text-gray-800 rounded text-center text-sm font-medium">
+              Josephine County →
+            </a>
+            
+          </div>
+          
+          
+          <!-- County dropdown -->
+          <select onchange="if(this.value) window.location.href=this.value" class="px-4 py-2 border border-gray-300 rounded bg-white text-gray-800 text-sm font-medium cursor-pointer hover:border-oregon-blue focus:outline-none focus:ring-2 focus:ring-oregon-blue">
+            <option value="">Jump to County...</option>
+            
+            <option value="baker-county.html" >
+              Baker County
+            </option>
+            <option value="benton-county.html" >
+              Benton County
+            </option>
+            <option value="clackamas-county.html" >
+              Clackamas County
+            </option>
+            <option value="clatsop-county.html" >
+              Clatsop County
+            </option>
+            <option value="columbia-county.html" >
+              Columbia County
+            </option>
+            <option value="coos-county.html" >
+              Coos County
+            </option>
+            <option value="crook-county.html" >
+              Crook County
+            </option>
+            <option value="curry-county.html" >
+              Curry County
+            </option>
+            <option value="deschutes-county.html" >
+              Deschutes County
+            </option>
+            <option value="douglas-county.html" >
+              Douglas County
+            </option>
+            <option value="gilliam-county.html" >
+              Gilliam County
+            </option>
+            <option value="grant-county.html" >
+              Grant County
+            </option>
+            <option value="harney-county.html" >
+              Harney County
+            </option>
+            <option value="hood-river-county.html" >
+              Hood River County
+            </option>
+            <option value="jackson-county.html" >
+              Jackson County
+            </option>
+            <option value="jefferson-county.html" selected>
+              Jefferson County
+            </option>
+            <option value="josephine-county.html" >
+              Josephine County
+            </option>
+            <option value="klamath-county.html" >
+              Klamath County
+            </option>
+            <option value="lake-county.html" >
+              Lake County
+            </option>
+            <option value="lane-county.html" >
+              Lane County
+            </option>
+            <option value="lincoln-county.html" >
+              Lincoln County
+            </option>
+            <option value="linn-county.html" >
+              Linn County
+            </option>
+            <option value="malheur-county.html" >
+              Malheur County
+            </option>
+            <option value="marion-county.html" >
+              Marion County
+            </option>
+            <option value="morrow-county.html" >
+              Morrow County
+            </option>
+            <option value="multnomah-county.html" >
+              Multnomah County
+            </option>
+            <option value="polk-county.html" >
+              Polk County
+            </option>
+            <option value="sherman-county.html" >
+              Sherman County
+            </option>
+            <option value="tillamook-county.html" >
+              Tillamook County
+            </option>
+            <option value="umatilla-county.html" >
+              Umatilla County
+            </option>
+            <option value="union-county.html" >
+              Union County
+            </option>
+            <option value="wallowa-county.html" >
+              Wallowa County
+            </option>
+            <option value="wasco-county.html" >
+              Wasco County
+            </option>
+            <option value="washington-county.html" >
+              Washington County
+            </option>
+            <option value="wheeler-county.html" >
+              Wheeler County
+            </option>
+            <option value="yamhill-county.html" >
+              Yamhill County
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="container mx-auto px-4 py-3 text-sm" aria-label="Breadcrumb">
+    <ol class="flex items-center space-x-2 text-gray-600">
+      <li>
+        <a href="../index.html" class="hover:text-oregon-blue">Home</a>
+      </li>
+      <li class="flex items-center">
+        <span class="mx-2">/</span>
+        <span class="text-gray-800 font-semibold">Jefferson County</span>
+      </li>
+    </ol>
+  </nav>
+
+<main class="container mx-auto px-4 py-6">
+  <!-- County Header -->
+  <article class="bg-white rounded-lg shadow-md overflow-hidden mb-8">
+    <div class="county-header bg-gradient-to-r from-oregon-teal to-oregon-blue text-white p-6 md:p-8">
+      <h1 class="text-3xl md:text-4xl font-bold mb-2">
+        Jefferson County
+      </h1>
+      <p class="text-xl md:text-2xl opacity-90">
+        The Cove Palisades State Park
+      </p>
+    </div>
+
+    <!-- County Image -->
+    <div class="county-image">
+      <img
+        src="../images/Image_054.jpg"
+        alt="The Cove Palisades State Park"
+        class="w-full h-auto"
+      />
+      <p class="text-sm text-gray-600 italic px-6 py-2 bg-gray-50">
+        The Cove Palisades State Park in Jefferson County. (Source: Gary Halvorson, Oregon State Archives)
+      </p>
+    </div>
+
+    <!-- Primary Attraction -->
+    <div class="primary-attraction p-6 md:p-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+        The Cove Palisades State Park
+      </h2>
+      <div class="text-gray-700 leading-relaxed space-y-4">
+        <p>Endless recreational opportunities, including excellent hiking, camping, boating, fishing, and bird watching, await you at The Cove Palisades State Park in Jefferson County. This stunner in the state's center is located on the waters of Lake Billy Chinook, nestled deep within canyons formed by the Crooked, Deschutes, and Metolius rivers. With all of the canyons, rivers, and lakes (oh my!), this park is a relaxing slice of paradise that proves there's no place like Oregon.</p>
+      </div>
+    </div>
+
+    
+    <!-- Additional Attractions -->
+    <div class="additional-attractions bg-gray-50 p-6 md:p-8 border-t border-gray-200">
+      <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-4">
+        You May Also Want to Explore...
+      </h3>
+      <ul class="space-y-3">
+        
+        <li class="flex items-start">
+          <span class="text-oregon-blue mr-2 mt-1">•</span>
+          <div>
+            
+            <a href="https://warmsprings-nsn.gov/program/the-museum-at-warm-springs/" target="_blank" rel="noopener" class="text-oregon-blue hover:underline font-semibold">
+              The Museum at Warm Springs
+            </a>
+            
+          </div>
+        </li>
+        
+        <li class="flex items-start">
+          <span class="text-oregon-blue mr-2 mt-1">•</span>
+          <div>
+            
+            <a href="https://www.fs.usda.gov/recarea/deschutes/recreation/recarea/?recid=71834&actid=50" target="_blank" rel="noopener" class="text-oregon-blue hover:underline font-semibold">
+              Black Butte fire lookout
+            </a>
+            
+          </div>
+        </li>
+        
+        <li class="flex items-start">
+          <span class="text-oregon-blue mr-2 mt-1">•</span>
+          <div>
+            
+            <a href="https://www.fs.usda.gov/recarea/ochoco/recarea/?recid=80948" target="_blank" rel="noopener" class="text-oregon-blue hover:underline font-semibold">
+              Tam-A-Lau Loop Hike
+            </a>
+            
+          </div>
+        </li>
+        
+        <li class="flex items-start">
+          <span class="text-oregon-blue mr-2 mt-1">•</span>
+          <div>
+            
+            <span class="text-gray-800 font-semibold">Crooked River High Bridge</span>
+            
+          </div>
+        </li>
+        
+        <li class="flex items-start">
+          <span class="text-oregon-blue mr-2 mt-1">•</span>
+          <div>
+            
+            <a href="https://www.bendbulletin.com/explore/nature-on-an-even-keel-at-central-oregon-s-balancing-rock/article_ba7881c6-f342-11ed-be96-4f9f7e07eac1.html" target="_blank" rel="noopener" class="text-oregon-blue hover:underline font-semibold">
+              Metolius Balancing Rocks
+            </a>
+            
+          </div>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    <!-- More Information -->
+    <div class="more-info p-6 md:p-8 bg-oregon-teal text-white">
+      <h3 class="text-xl font-bold mb-3">More Information</h3>
+      <p class="leading-relaxed">
+        For more information: Visit <a href="http://stateparks.oregon.gov/" target="_blank" rel="noopener" class="underline hover:text-gray-300">stateparks.oregon.gov</a> and search "Cove Palisades"
+      </p>
+    </div>
+  </article>
+
+  <!-- Navigation hint -->
+  <div class="text-center py-6 text-gray-600">
+    <p class="mb-2">Use the dropdown menu above to jump to another county</p>
+    <a href="../index.html" class="inline-block px-6 py-3 bg-oregon-blue text-white rounded-lg hover:bg-opacity-90 transition-colors font-semibold">
+      ← Back to All Counties
+    </a>
+  </div>
+</main>
+
+
+  <footer class="bg-oregon-teal text-white mt-12">
+    <div class="container mx-auto px-4 py-8">
+      <div class="text-center">
+        <p class="mb-2">2025 Oregon Treasures Quest Guide</p>
+        <p class="text-sm opacity-75">Brought to you by Oregon's U.S. Senator Jeff Merkley</p>
+        <p class="text-sm opacity-75 mt-2">
+          <a href="https://www.merkley.senate.gov/" target="_blank" rel="noopener" class="hover:text-gray-300 underline">
+            Visit merkley.senate.gov
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
