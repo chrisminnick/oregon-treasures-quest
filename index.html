@@ -1056,7 +1056,6 @@
 
       const map = new Map(document.getElementById('map-container'), {
         center: bounds.getCenter(),
-        zoom: 10,
         mapId: 'wayfinder-map',
         styles: [
           {
@@ -1067,8 +1066,12 @@
         ]
       });
 
-      // Fit map to show all markers
+      // Fit map to show all markers with maximum zoom
       map.fitBounds(bounds);
+      
+      // Add slight padding around the markers
+      const padding = { top: 50, right: 50, bottom: 50, left: 50 };
+      map.fitBounds(bounds, padding);
 
       // Add markers
       locations.forEach(location => {
