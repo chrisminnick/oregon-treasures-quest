@@ -273,14 +273,7 @@
       const map = new Map(document.getElementById('map-container'), {
         center: { lat: locations[0].lat, lng: locations[0].lng },
         zoom: 12,
-        mapId: 'wayfinder-map',
-        styles: [
-          {
-            featureType: 'poi',
-            elementType: 'labels',
-            stylers: [{ visibility: 'off' }]
-          }
-        ]
+        mapId: 'wayfinder-map'
       });
 
       // Add single marker

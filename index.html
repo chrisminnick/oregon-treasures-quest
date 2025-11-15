@@ -1056,14 +1056,7 @@
 
       const map = new Map(document.getElementById('map-container'), {
         center: bounds.getCenter(),
-        mapId: 'wayfinder-map',
-        styles: [
-          {
-            featureType: 'poi',
-            elementType: 'labels',
-            stylers: [{ visibility: 'off' }]
-          }
-        ]
+        mapId: 'wayfinder-map'
       });
 
       // Fit map to show all markers with maximum zoom
