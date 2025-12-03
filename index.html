@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore Oregon's hidden gems with the 2025 Oregon Treasures Quest, a county-by-county guide to must-see attractions across the state." />
+  <meta name="theme-color" content="#00363b" />
   <title>2025 Oregon Treasures Quest</title>
   <link rel="preconnect" href="https://maps.googleapis.com" />
   <link rel="dns-prefetch" href="https://maps.googleapis.com" />
@@ -10,17 +12,17 @@
 </head>
 <body class="bg-gray-50">
 
-  <nav class="bg-white shadow-md sticky top-0 z-50">
+  <nav class="bg-white shadow-md sticky top-0 z-50" aria-label="Main navigation">
     <div class="content-wrapper px-4 py-3">
       <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
         <div class="flex items-center">
-          <a href="index.html" class="text-primary hover:text-secondary font-semibold text-lg">
+          <a href="index.html" class="text-primary hover:text-secondary font-semibold text-lg" aria-label="Home">
             🏠 2025 Oregon Treasures Quest
           </a>
         </div>
         
         <div class="flex items-center">
-          <select onchange="if(this.value) window.location.href=this.value" class="px-4 py-2 border border-gray-300 rounded bg-white text-gray-800 text-sm font-medium cursor-pointer hover:border-secondary focus:outline-none focus:ring-2 focus:ring-secondary">
+          <select onchange="if(this.value) window.location.href=this.value" class="px-4 py-2 border border-gray-300 rounded bg-white text-gray-800 text-sm font-medium cursor-pointer hover:border-secondary focus:outline-none focus:ring-2 focus:ring-secondary" aria-label="Navigate to page">
             <option value="">Jump to Page...</option>
             
             <option value="pages/baker-county.html" >
@@ -152,7 +154,7 @@
 
 <!-- Map Section -->
 <section id="map" class="bg-white border-b border-gray-200">
-  <div id="map-container" style="height: 500px; width: 100%; background-color: #f3f4f6; display: flex; align-items: center; justify-content: center;">
+  <div id="map-container" style="height: 500px; width: 100%; background-color: #f3f4f6; display: flex; align-items: center; justify-content: center; contain: layout;">
     <div style="color: #9ca3af; font-size: 14px;">Loading map...</div>
   </div>
   <style>
@@ -176,12 +178,14 @@
       
       <a href="pages/baker-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_009.jpg" 
             alt="National Historic Oregon Trail Interpretive Center"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -200,12 +204,14 @@
       
       <a href="pages/benton-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_012.jpg" 
             alt="Marys Peak"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -224,12 +230,14 @@
       
       <a href="pages/clackamas-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_015.jpg" 
             alt="Timberline Lodge"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -248,12 +256,14 @@
       
       <a href="pages/clatsop-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_018.jpg" 
             alt="Shipwreck of the Peter Iredale"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -272,12 +282,14 @@
       
       <a href="pages/columbia-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_021.jpg" 
             alt="Scappoose Bay"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -296,12 +308,14 @@
       
       <a href="pages/coos-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_024.jpg" 
             alt="South Slough National Estuarine Research Reserve"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -320,12 +334,14 @@
       
       <a href="pages/crook-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_027.jpg" 
             alt="Abandoned mines at Ochoco National Forest"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -344,12 +360,14 @@
       
       <a href="pages/curry-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_030.jpg" 
             alt="Cape Blanco Lighthouse"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -368,12 +386,14 @@
       
       <a href="pages/deschutes-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_033.jpg" 
             alt="Smith Rock State Park"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -392,12 +412,14 @@
       
       <a href="pages/douglas-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_036.jpg" 
             alt="Oregon Dunes National Recreation Area"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -416,12 +438,14 @@
       
       <a href="pages/gilliam-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_039.jpg" 
             alt="Cottonwood Canyon State Park"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -440,12 +464,14 @@
       
       <a href="pages/grant-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_042.jpg" 
             alt="Thomas Condon Visitor Center fossil exhibit"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -464,12 +490,14 @@
       
       <a href="pages/harney-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_045.jpg" 
             alt="The Alvord Desert"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -488,12 +516,14 @@
       
       <a href="pages/hood-river-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_048.jpg" 
             alt="The Event Site in Hood River"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -512,12 +542,14 @@
       
       <a href="pages/jackson-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_051.jpg" 
             alt="Oregon Shakespeare Festival"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -536,12 +568,14 @@
       
       <a href="pages/jefferson-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_054.jpg" 
             alt="The Cove Palisades State Park"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -560,12 +594,14 @@
       
       <a href="pages/josephine-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_057.jpg" 
             alt="Oregon Caves National Monument and Preserve"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -584,12 +620,14 @@
       
       <a href="pages/klamath-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_060.jpg" 
             alt="Crater Lake National Park"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -608,12 +646,14 @@
       
       <a href="pages/lake-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_063.jpg" 
             alt="Fort Rock State Natural Area"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -632,12 +672,14 @@
       
       <a href="pages/lane-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_066.jpg" 
             alt="Dorena Covered Bridge"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -656,12 +698,14 @@
       
       <a href="pages/lincoln-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_069.jpg" 
             alt="Cascade Head"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -680,12 +724,14 @@
       
       <a href="pages/linn-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_072.jpg" 
             alt="Tamolitch Blue Pool"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -704,12 +750,14 @@
       
       <a href="pages/malheur-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_075.jpg" 
             alt="Owyhee Canyonlands"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -728,12 +776,14 @@
       
       <a href="pages/marion-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_078.jpg" 
             alt="Oregon State Capitol"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -752,12 +802,14 @@
       
       <a href="pages/morrow-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_081.jpg" 
             alt="Blue Mountain Scenic Byway"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -776,12 +828,14 @@
       
       <a href="pages/multnomah-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_084.jpg" 
             alt="Multnomah Falls"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -800,12 +854,14 @@
       
       <a href="pages/polk-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_087.jpg" 
             alt="Valley of the Giants"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -824,12 +880,14 @@
       
       <a href="pages/sherman-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_090.jpg" 
             alt="Macks Canyon Recreation Site"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -848,12 +906,14 @@
       
       <a href="pages/tillamook-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_093.jpg" 
             alt="Cape Kiwanda"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -872,12 +932,14 @@
       
       <a href="pages/umatilla-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_096.jpg" 
             alt="Hat Rock State Park"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -896,12 +958,14 @@
       
       <a href="pages/union-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_099.jpg" 
             alt="Anthony Lakes Mountain Resort"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -920,12 +984,14 @@
       
       <a href="pages/wallowa-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_102.jpg" 
             alt="Wallowa Lake"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -944,12 +1010,14 @@
       
       <a href="pages/wasco-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_105.jpg" 
             alt="Shaniko Ghost Town"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -968,12 +1036,14 @@
       
       <a href="pages/washington-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_108.jpg" 
             alt="The Tualatin River National Wildlife Refuge"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -992,12 +1062,14 @@
       
       <a href="pages/wheeler-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_111.jpg" 
             alt="John Day Fossil Beds – Painted Hills Unit"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
@@ -1016,12 +1088,14 @@
       
       <a href="pages/yamhill-county.html" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         
-        <div class="aspect-video w-full overflow-hidden bg-gray-200">
+        <div class="w-full overflow-hidden bg-gray-200" style="aspect-ratio: 16/9;">
           <img 
             src="images/Image_114.jpg" 
             alt="Evergreen Aviation and Space Museum"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            width="640"
+            height="360"
           />
         </div>
         
