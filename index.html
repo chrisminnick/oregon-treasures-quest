@@ -4,12 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>2025 Oregon Treasures Quest</title>
+  <link rel="preconnect" href="https://maps.googleapis.com" />
+  <link rel="dns-prefetch" href="https://maps.googleapis.com" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="bg-gray-50">
 
   <nav class="bg-white shadow-md sticky top-0 z-50">
-    <div class="container mx-auto px-4 py-3">
+    <div class="content-wrapper px-4 py-3">
       <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
         <div class="flex items-center">
           <a href="index.html" class="text-primary hover:text-secondary font-semibold text-lg">
@@ -136,21 +138,23 @@
   </nav>
 
 <header class="bg-primary text-white">
-  <div class="container mx-auto px-4 py-8 md:py-12">
+  <div class="content-wrapper px-4 py-8 md:py-12">
     <div class="text-center">
-      <img src="images/Image_001.png" alt="2025 Oregon Treasures Quest" class="mx-auto max-w-full h-auto mb-6 rounded-lg shadow-lg" />
+      <img src="images/Image_001.png" alt="2025 Oregon Treasures Quest" class="mx-auto h-auto mb-6 rounded-lg shadow-lg" style="max-width: 100%; width: auto;" fetchpriority="high" />
       <h1 class="text-3xl md:text-5xl font-bold mb-4">
         2025 Guide to Oregon's Treasures
       </h1>
       <p class="text-lg md:text-xl">Treasures worth exploring in each of Oregon's 36 counties</p>
-      <img src="images/Image_002.png" alt="Logo" class="mx-auto mt-6 max-w-xs p-4" />
+      <img src="images/Image_002.png" alt="Logo" class="mx-auto mt-6 max-w-xs p-4" loading="lazy" />
     </div>
   </div>
 </header>
 
 <!-- Map Section -->
 <section id="map" class="bg-white border-b border-gray-200">
-  <div id="map-container" style="height: 500px; width: 100%;"></div>
+  <div id="map-container" style="height: 500px; width: 100%; background-color: #f3f4f6; display: flex; align-items: center; justify-content: center;">
+    <div style="color: #9ca3af; font-size: 14px;">Loading map...</div>
+  </div>
   <style>
     @media (min-width: 768px) {
       #map-container {
@@ -160,7 +164,7 @@
   </style>
 </section>
 
-<main class="container mx-auto px-4 py-8">
+<main class="content-wrapper px-4 py-8">
   
 
   <section id="pages" class="mb-8">
@@ -1095,11 +1099,21 @@
       
     }
 
-    initMap();
+    // Defer map initialization until after page load
+    if (document.readyState === 'loading') {
+      window.addEventListener('DOMContentLoaded', initMap);
+    } else {
+      // Use requestIdleCallback for better performance, fallback to setTimeout
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(initMap);
+      } else {
+        setTimeout(initMap, 1);
+      }
+    }
   </script>
 
   <footer class="bg-primary text-white mt-12">
-    <div class="container mx-auto px-4 py-8">
+    <div class="content-wrapper px-4 py-8">
       <div class="text-center">
         <p class="mb-2">2025 Oregon Treasures Quest</p>
         <p class="text-sm opacity-75">Explore Oregon's hidden gems with the 2025 Oregon Treasures Quest, a county-by-county guide to must-see attractions across the state.</p>
