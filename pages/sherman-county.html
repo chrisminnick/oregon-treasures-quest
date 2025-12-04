@@ -300,12 +300,29 @@
     });
 
     async function initMap() {
+      const mapContainer = document.getElementById('map-container');
+      
+      // Check if offline
+      if (!navigator.onLine) {
+        mapContainer.innerHTML = `
+          <div style="text-align: center; padding: 40px 20px;">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 16px; color: #9ca3af;">
+              <path d="M1 1l22 22M16.72 11.06A10.94 10.94 0 0 1 19 12.55M5 12.55a10.94 10.94 0 0 1 5.17-2.39M10.71 5.05A16 16 0 0 1 22.58 9M1.42 9a15.91 15.91 0 0 1 4.7-2.88M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"></path>
+            </svg>
+            <h3 style="margin: 0 0 8px; font-size: 18px; font-weight: 600; color: #374151;">No Internet Connection</h3>
+            <p style="margin: 0; color: #6b7280; font-size: 14px;">The map is not available while offline.<br>Connect to the internet to view locations.</p>
+          </div>
+        `;
+        return;
+      }
+
       const locations = [{ lat: 45.1856, lng: -120.8278, title: "Sherman County", url: "sherman-county.html" }];
 
       if (locations.length === 0) return;
 
-      // Load required libraries
-      const { Map, InfoWindow } = await google.maps.importLibrary("maps");
+      try {
+        // Load required libraries
+        const { Map, InfoWindow } = await google.maps.importLibrary("maps");
       const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
       
@@ -323,6 +340,21 @@
         title: locations[0].title
       });
       
+      } catch (error) {
+        console.error('Map loading error:', error);
+        const mapContainer = document.getElementById('map-container');
+        mapContainer.innerHTML = `
+          <div style="text-align: center; padding: 40px 20px;">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 16px; color: #9ca3af;">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+            <h3 style="margin: 0 0 8px; font-size: 18px; font-weight: 600; color: #374151;">Map Unavailable</h3>
+            <p style="margin: 0; color: #6b7280; font-size: 14px;">The map could not be loaded at this time.<br>Please check your internet connection.</p>
+          </div>
+        `;
+      }
     }
 
     // Defer map initialization until after page load
@@ -367,6 +399,57 @@
           });
       });
     }
+
+    // Show notification when going offline/online
+    function showConnectionStatus(isOnline) {
+      const existingNotice = document.getElementById('connection-notice');
+      if (existingNotice) existingNotice.remove();
+
+      const notice = document.createElement('div');
+      notice.id = 'connection-notice';
+      notice.style.cssText = `
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: ${isOnline ? '#10b981' : '#f59e0b'};
+        color: white;
+        padding: 12px 24px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 10000;
+        font-size: 14px;
+        font-weight: 500;
+        animation: slideDown 0.3s ease-out;
+      `;
+      notice.textContent = isOnline 
+        ? '✓ Back online' 
+        : '⚠ You're offline - some features may be limited';
+      
+      document.body.appendChild(notice);
+      
+      setTimeout(() => {
+        notice.style.animation = 'slideUp 0.3s ease-out';
+        setTimeout(() => notice.remove(), 300);
+      }, isOnline ? 2000 : 5000);
+    }
+
+    window.addEventListener('online', () => showConnectionStatus(true));
+    window.addEventListener('offline', () => showConnectionStatus(false));
+
+    // Add CSS animations
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes slideDown {
+        from { transform: translateX(-50%) translateY(-100%); opacity: 0; }
+        to { transform: translateX(-50%) translateY(0); opacity: 1; }
+      }
+      @keyframes slideUp {
+        from { transform: translateX(-50%) translateY(0); opacity: 1; }
+        to { transform: translateX(-50%) translateY(-100%); opacity: 0; }
+      }
+    `;
+    document.head.appendChild(style);
   </script>
   <footer class="bg-primary text-white mt-12">
     <div class="content-wrapper px-4 py-8">
