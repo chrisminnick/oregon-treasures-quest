@@ -43,6 +43,7 @@ const urlsToCache = [
   "images/Image_001.png",
   "images/Image_002.png",
   "/images/Image_009.jpg",
+  "/qr-codes/2025-oregon-treasures-quest-custom-qr.png",
   "/images/Image_012.jpg",
   "/images/Image_015.jpg",
   "/images/Image_018.jpg",
