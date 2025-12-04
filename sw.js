@@ -1,5 +1,5 @@
 // Service Worker for offline caching
-const CACHE_NAME = 'site-cache-v2';
+const CACHE_NAME = 'site-cache-v3';
 const urlsToCache = [
   "/",
   "/index.html",
@@ -81,15 +81,39 @@ const urlsToCache = [
   "/images/Image_114.jpg"
 ];
 
-// Install event - cache core files
+// Install event - aggressively cache ALL resources for full offline support
 self.addEventListener('install', (event) => {
+  console.log('Service Worker installing, caching all resources...');
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then((cache) => {
-        console.log('Opened cache');
-        return cache.addAll(urlsToCache).catch((error) => {
-          console.error('Failed to cache some resources:', error);
-        });
+        console.log('Opened cache, adding', urlsToCache.length, 'resources');
+        // Cache in batches to avoid overwhelming the browser
+        const batchSize = 10;
+        const batches = [];
+        for (let i = 0; i < urlsToCache.length; i += batchSize) {
+          batches.push(urlsToCache.slice(i, i + batchSize));
+        }
+        
+        return batches.reduce((promise, batch) => {
+          return promise.then(() => {
+            return cache.addAll(batch).catch((error) => {
+              console.error('Failed to cache batch:', batch, error);
+              // Try individual URLs if batch fails
+              return Promise.allSettled(
+                batch.map(url => cache.add(url).catch(err => {
+                  console.warn('Failed to cache:', url, err);
+                }))
+              );
+            });
+          });
+        }, Promise.resolve());
+      })
+      .then(() => {
+        console.log('All resources cached successfully!');
+      })
+      .catch((error) => {
+        console.error('Cache installation failed:', error);
       })
   );
   self.skipWaiting();
