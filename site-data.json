@@ -1,0 +1,2006 @@
+{
+  "meta": {
+    "title": "2025 Oregon Treasures Quest",
+    "description": "Explore Oregon's hidden gems with the 2025 Oregon Treasures Quest, a county-by-county guide to must-see attractions across the state.",
+    "baseUrl": "https://chrisminnick.github.io/oregon-treasures-quest",
+    "primaryColor": "#00363b",
+    "secondaryColor": "#205e9e",
+    "generatedAt": "2025-12-04T01:00:30.889Z"
+  },
+  "homepage": {
+    "title": "2025 Guide to Oregon's Treasures",
+    "subtitle": "Treasures worth exploring in each of Oregon's 36 counties",
+    "introText": "",
+    "pagesTitle": "Explore All Pages",
+    "headerImage": "images/Image_001.png",
+    "logoImage": "images/Image_002.png"
+  },
+  "pages": [
+    {
+      "id": 1,
+      "name": "Baker County",
+      "slug": "baker-county",
+      "primaryAttraction": {
+        "name": "National Historic Oregon Trail Interpretive Center",
+        "description": "The newly upgraded National Historic Oregon Trail Interpretive Center is a must-visit destination in Baker County. The Center is located just outside of Baker City on 500 acres managed by the Bureau of Land Management, and contains Oregon Trail exhibits, four miles of interpretive trails, theater presentations, and historical artifacts including actual wheel ruts from covered wagons. All of it paints a vivid picture of the emigrant experience along the Oregon Trail out West.",
+        "featured": true,
+        "geo": {
+          "lat": 44.814608,
+          "lng": -117.72884
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "Historic Downtown Baker City",
+          "url": "https://travelbakercounty.com/historic-baker-city/",
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "Sumpter Valley Dredge State Heritage Site",
+          "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=174",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "Snake River Canyon",
+          "url": "https://www.fs.usda.gov/recarea/wallowa-whitman/recreation/recarea/?recid=59662",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_009.jpg",
+        "alt": "National Historic Oregon Trail Interpretive Center",
+        "credit": "National Historic Oregon Trail Interpretive Center in Baker City, Oregon. (Source: Team Merkley)"
+      },
+      "moreInfo": {
+        "website": "http://blm.gov/",
+        "websiteName": "blm.gov",
+        "fullText": "For more information: Visit blm.gov and search \"Oregon Trail Interpretive Center\""
+      },
+      "geo": {
+        "lat": 44.814608,
+        "lng": -117.72884
+      },
+      "sortOrder": 0
+    },
+    {
+      "id": 2,
+      "name": "Benton County",
+      "slug": "benton-county",
+      "primaryAttraction": {
+        "name": "Marys Peak",
+        "description": "Did you know Marys Peak in Benton County is the highest point in Oregon's Coast Range? On a clear day, hikers can see the Pacific Ocean to the west and the Cascade Mountains to the east while standing at the 4,097 foot summit. Called tcha Timanwi, or \"place of spiritual power\" by the native Kalapuya, this jewel in the Siuslaw National Forest offers several excellent hikes for all experience levels and was designated a Scenic Botanical Area because of its wide range of dazzling wildflowers throughout the spring and summer.",
+        "featured": true,
+        "geo": {
+          "lat": 44.5034,
+          "lng": -123.5581
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "Alsea Falls",
+          "url": "https://www.blm.gov/visit/alsea-falls-recreation-site-campground",
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "William L. Finley National Wildlife Refuge",
+          "url": "https://www.fws.gov/refuge/william-l-finley",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "Bald Hill Natural Area",
+          "url": "https://www.corvallisoregon.gov/parksrec/page/bald-hill-natural-area",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_012.jpg",
+        "alt": "Marys Peak",
+        "credit": "Marys Peak in Benton County. (Source: Gary Halvorson, Oregon State Archives)"
+      },
+      "moreInfo": {
+        "website": "https://www.fs.usda.gov/siuslaw",
+        "websiteName": "fs.usda.gov/siuslaw",
+        "fullText": "For more information: Visit fs.usda.gov/siuslaw and search \"Marys Peak\""
+      },
+      "geo": {
+        "lat": 44.5034,
+        "lng": -123.5581
+      },
+      "sortOrder": 1
+    },
+    {
+      "id": 3,
+      "name": "Clackamas County",
+      "slug": "clackamas-county",
+      "primaryAttraction": {
+        "name": "Timberline Lodge",
+        "description": "Perched on iconic Mt. Hood, Timberline Lodge is a historic ski lodge in Clackamas County. As a massive undertaking that was born out of the New Deal during the Great Depression, and declared a National Historic Landmark in 1977, this Oregon treasure is the perfect blend of incredible alpine views and local art and history that's even inspired Hollywood movies. Whether you want to hit the slopes, hike, view wildlife, or just take in a stunning mountain landscape, the sprawling 55,000 square foot Timberline Lodge is a must-see destination that embodies all the beauty and grit of the Great Northwest.",
+        "featured": true,
+        "geo": {
+          "lat": 45.3311,
+          "lng": -121.7113
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "Old Salmon River Trail",
+          "url": "https://www.fs.usda.gov/recarea/mthood/recarea/?recid=53442",
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "Trillium Lake",
+          "url": "https://www.fs.usda.gov/recarea/mthood/recarea/?recid=53634",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "The Oregon City Municipal Elevator",
+          "url": "https://www.orcity.org/1235/Municipal-Elevator",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_015.jpg",
+        "alt": "Timberline Lodge",
+        "credit": "Timberline Lodge in Clackamas County. (Source: Team Merkley)"
+      },
+      "moreInfo": {
+        "website": "https://www.fs.usda.gov/mthood",
+        "websiteName": "fs.usda.gov/mthood",
+        "fullText": "For more information: Visit fs.usda.gov/mthood and navigate to the \"Destinations\" tab on the \"Visit Us\" drop down menu."
+      },
+      "geo": {
+        "lat": 45.3311,
+        "lng": -121.7113
+      },
+      "sortOrder": 2
+    },
+    {
+      "id": 4,
+      "name": "Clatsop County",
+      "slug": "clatsop-county",
+      "primaryAttraction": {
+        "name": "Shipwreck of the Peter Iredale",
+        "description": "In 1906, the Peter Iredale, a four-masted English ship, ran ashore on the Clatsop Spit en route to Portland. Miraculously, all 27 crew members (and two stowaways) survived the wreck and the ship's hull was left intact. But by the time the weather cleared up enough to tow the ship back out to sea, the ship was already embedded in the sand and has remained there ever since. Visitors to Clatsop County's Fort Stevens State Park can still see the century-old ghostly remains of the Iredale's bow and ribs on the beach.",
+        "featured": true,
+        "geo": {
+          "lat": 46.17837,
+          "lng": -123.98109
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "The Astoria Column",
+          "url": "https://astoriacolumn.org/",
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "Haystack Rock",
+          "url": "https://www.cannonbeach.org/things-to-do/beaches-and-parks/haystack-rock/",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "Oregon Film Museum",
+          "url": "https://astoriamuseums.org/explore/oregon-film-museum/",
+          "featured": false
+        },
+        {
+          "id": 4,
+          "name": "Driving on Sunset Beach",
+          "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=182",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_018.jpg",
+        "alt": "Shipwreck of the Peter Iredale",
+        "credit": "Shipwreck of the Peter Iredale in Fort Stevens State Park in Clatsop County. (Source: Gary Halvorson, Oregon State Archives)"
+      },
+      "moreInfo": {
+        "website": "https://stateparks.oregon.gov/",
+        "websiteName": "stateparks.oregon.gov",
+        "fullText": "For more information: Visit stateparks.oregon.gov and search \"Fort Stevens\""
+      },
+      "geo": {
+        "lat": 46.17837,
+        "lng": -123.98109
+      },
+      "sortOrder": 3
+    },
+    {
+      "id": 5,
+      "name": "Columbia County",
+      "slug": "columbia-county",
+      "primaryAttraction": {
+        "name": "Scappoose Bay Marine Park",
+        "description": "Kayaking or stand-up paddling around Scappoose Bay Marine Park are two of the best ways to witness the beauty of Columbia County. The bay itself is an 85,000-acre magical array of wetlands, streams, channels, and islands that serve as the perfect place to see migrating birds and native fish like Chinook and coho salmon.",
+        "featured": true,
+        "geo": {
+          "lat": 45.7547,
+          "lng": -122.8778
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "The Crown Z Trail",
+          "url": "https://www.columbiacountyor.gov/crownz-trail",
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "Old Town St. Helens",
+          "url": "https://www.sthelensoregon.gov/community",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "Watts Pioneer Museum & Heritage Site",
+          "url": null,
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_021.jpg",
+        "alt": "Scappoose Bay",
+        "credit": "Scappoose Bay in Columbia County. (Source: Port of Columbia County)"
+      },
+      "moreInfo": {
+        "website": "https://www.portofcolumbiacounty.org/",
+        "websiteName": "portofcolumbiacounty.org",
+        "fullText": "For more information: Visit portofcolumbiacounty.org and search \"Scappoose Bay.\""
+      },
+      "geo": {
+        "lat": 45.7547,
+        "lng": -122.8778
+      },
+      "sortOrder": 4
+    },
+    {
+      "id": 6,
+      "name": "Coos County",
+      "slug": "coos-county",
+      "primaryAttraction": {
+        "name": "South Slough Research Reserve Interpretive Center and Hidden Creek Trail",
+        "description": "On a lush, 7,000-acre landscape in Coos County you'll find this magical research reserve on Oregon's South Coast filled with shady trails, open water channels, wonderful wetlands, and an interpretive center. There about a dozen hikes to explore, including the Hidden Creek Trail, which features a boardwalk and marsh observation deck. You might also consider the Wasson Creek and Fredrickson Marsh loop trails for prime forest and marsh viewing. You could also launch a kayak or canoe from Hinch Bridge to see wildlife like the great blue heron. One visit to the South Slough will show you why this iridescent estuary is home to critical research, education, and coastal stewardship efforts.",
+        "featured": true,
+        "geo": {
+          "lat": 43.2894,
+          "lng": -124.3267
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "Face Rock",
+          "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=47",
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "Coquille Falls",
+          "url": "https://www.fs.usda.gov/recarea/rogue-siskiyou/recarea/?recid=70026",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "Coquille River Lighthouse",
+          "url": null,
+          "featured": false
+        },
+        {
+          "id": 4,
+          "name": "South Cove Beach at Cape Arago State Park",
+          "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=66",
+          "featured": false
+        },
+        {
+          "id": 5,
+          "name": "Doerner Doug Fir",
+          "url": "https://www.blm.gov/visit/doerner-fir-trail",
+          "featured": false
+        },
+        {
+          "id": 6,
+          "name": "Golden and Silver Falls State Natural Area",
+          "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=67",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_024.jpg",
+        "alt": "South Slough National Estuarine Research Reserve",
+        "credit": "South Slough National Estuarine Research Reserve in Coos County. (Source: Team Merkley)"
+      },
+      "moreInfo": {
+        "website": "http://oregon.gov/",
+        "websiteName": "oregon.gov",
+        "fullText": "For more information: Visit oregon.gov and search for \"South Slough Reserve\""
+      },
+      "geo": {
+        "lat": 43.2894,
+        "lng": -124.3267
+      },
+      "sortOrder": 5
+    },
+    {
+      "id": 7,
+      "name": "Crook County",
+      "slug": "crook-county",
+      "primaryAttraction": {
+        "name": "Explore the Ochoco Forest Mines",
+        "description": "The mining history of Crook County is hidden in the hills of the Ochoco National Forest. Once over 1,000 mines bore gold, thundereggs, and cinnabar throughout the Ochocos, but only a few are left in operation today. However, you can still explore many of the abandoned mines today on trails throughout the Lookout Mountain area, including Blue Ridge Mine, the Mother Lode Mine, and the Independent Mine. And to immerse yourself in the history of the mining operations in this area known as the \"Cowboy Capital of Oregon,\" trek the shorter interpretive Baneberry Trail for a fun side adventure.",
+        "featured": true,
+        "geo": {
+          "lat": 44.2919,
+          "lng": -120.2544
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "Steins Pillar Trailhead",
+          "url": "https://www.fs.usda.gov/recarea/ochoco/recarea/?recid=38758",
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "Bowman Museum",
+          "url": "https://crookcountyhistorycenter.org/",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "Lower Crooked River Back Country Byway",
+          "url": "https://www.blm.gov/visit/lower-crooked-river-back-country-byway",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_027.jpg",
+        "alt": "Abandoned mines at Ochoco National Forest",
+        "credit": "Abandoned mines at the Ochoco National Forest in Crook County. (Source: Gary Halvorson, Oregon State Archives)"
+      },
+      "moreInfo": {
+        "website": "http://fs.usda.gov/ochoco",
+        "websiteName": "fs.usda.gov/ochoco",
+        "fullText": "For more information: Visit fs.usda.gov/ochoco and search \"Baneberry Trail\""
+      },
+      "geo": {
+        "lat": 44.2919,
+        "lng": -120.2544
+      },
+      "sortOrder": 6
+    },
+    {
+      "id": 8,
+      "name": "Curry County",
+      "slug": "curry-county",
+      "primaryAttraction": {
+        "name": "Cape Blanco State Park and Lighthouse",
+        "description": "Perch yourself on the sweeping bluffs of Cape Blanco State Park in Curry County for a panoramic view of the Pacific. As the westernmost point of land in Oregon, this stunning coastline is a prime spot to whale watch and catch unforgettable sunrises and sunsets. It is also home to the Cape Blanco Lighthouse—the state's oldest continuously operating lighthouse that's been guiding the way home for travelers and fishermen since 1870. You can take a tour of this historical gem in the warmer months.",
+        "featured": true,
+        "geo": {
+          "lat": 42.8372,
+          "lng": -124.5647
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "Redwood Trail #1111",
+          "url": "https://www.fs.usda.gov/recarea/rogue-siskiyou/null/recarea/?recid=69596&actid=50",
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "Natural Bridges Viewpoint",
+          "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=56",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "Cove Trail at Port Orford Heads State Park",
+          "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=43",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_030.jpg",
+        "alt": "Cape Blanco Lighthouse",
+        "credit": "Cape Blanco Lighthouse in Curry County. (Source: Gary Halvorson, Oregon State Archives)"
+      },
+      "moreInfo": {
+        "website": "http://blm.gov/",
+        "websiteName": "blm.gov",
+        "fullText": "For more information: Visit blm.gov and search \"Cape Blanco\""
+      },
+      "geo": {
+        "lat": 42.8372,
+        "lng": -124.5647
+      },
+      "sortOrder": 7
+    },
+    {
+      "id": 9,
+      "name": "Deschutes County",
+      "slug": "deschutes-county",
+      "primaryAttraction": {
+        "name": "Smith Rock State Park",
+        "description": "Dubbed the \"Birthplace of American Sport Climbing,\" Smith Rock State Park in Deschutes County boasts the first climb in America that established the 5.14 grade—one of the most technically-difficult ratings in the sport. Famed climber Alan Watts was key to putting this spectacular spot to \"hang\" out on the map in the 1980s, as he elevated Smith Rock's incredible crags and cracks to new heights. Today, the park has thousands of climbing routes on walls like Monkey Face, Morning Glory, and The Marsupials, as well as many miles of hiking and mountain biking trails. And, to top it off, the Crooked River runs through the middle of the park, making it a picturesque, \"pitch\" perfect paradise in Central Oregon's High Desert.",
+        "featured": true,
+        "geo": {
+          "lat": 44.3672,
+          "lng": -121.1406
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "Lava River Cave Interpretive Site",
+          "url": "https://www.fs.usda.gov/recarea/deschutes/recarea/?recid=38396",
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "High Desert Museum",
+          "url": "https://highdesertmuseum.org/",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "Three Sisters Wilderness",
+          "url": "https://www.fs.usda.gov/recarea/deschutes/recarea/?recid=79444",
+          "featured": false
+        },
+        {
+          "id": 4,
+          "name": "The Big Red Ponderosa tree",
+          "url": "https://www.bendbulletin.com/explore/big-red-ponderosa-la-pine-state-park/image_403ea600-5f52-11eb-b461-4b139fbb1d57.html",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_033.jpg",
+        "alt": "Smith Rock State Park",
+        "credit": "Smith Rock State Park in Deschutes County. (Source: Gary Halvorson, Oregon State Archives)"
+      },
+      "moreInfo": {
+        "website": "https://stateparks.oregon.gov/",
+        "websiteName": "stateparks.oregon.gov",
+        "fullText": "For more information: Visit stateparks.oregon.gov and search \"Smith Rock\""
+      },
+      "geo": {
+        "lat": 44.3672,
+        "lng": -121.1406
+      },
+      "sortOrder": 8
+    },
+    {
+      "id": 10,
+      "name": "Douglas County",
+      "slug": "douglas-county",
+      "primaryAttraction": {
+        "name": "Oregon Dunes National Recreation Area",
+        "description": "The stunning Oregon Dunes National Recreation Area in coastal Douglas County blends a rare combination of ocean, forest, rivers, lakes, and desert-like landscapes all into one location. The 40-mile-long dunes spread inland about 2.5 miles and tower as high as 500 feet above sea level in some spots, making them the largest coastal dune system in North America. A visit to Oregon Dunes National Recreation Area provides endless opportunities to see diverse wildlife, delicate ecosystems, and embark on unique outdoor adventures like sandboarding and ATV rides. It's a place so special that it inspired Frank Herbert's classic science-fiction \"Dune\" book series, which has been turned into major Hollywood blockbusters.",
+        "featured": true,
+        "geo": {
+          "lat": 43.7236,
+          "lng": -124.1906
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "Umpqua Toketee Hot Springs",
+          "url": "https://www.fs.usda.gov/recarea/umpqua/recarea/?recid=63646",
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "Dean Creek Elk Viewing Area",
+          "url": "https://www.blm.gov/visit/dean-creek-elk-viewing-area",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "Devil's Staircase Wilderness",
+          "url": "https://www.fs.usda.gov/recarea/siuslaw/recarea/?recid=82924",
+          "featured": false
+        },
+        {
+          "id": 4,
+          "name": "Umpqua River Lighthouse",
+          "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=83",
+          "featured": false
+        },
+        {
+          "id": 5,
+          "name": "World's tallest sugar pine",
+          "url": "https://www.oregonlive.com/travel/2013/06/worlds_tallest_sugar_pine_tree.html",
+          "featured": false
+        },
+        {
+          "id": 6,
+          "name": "Cavitt Creek Falls swimming hole",
+          "url": "https://www.blm.gov/visit/cavitt-creek-falls-recreation-site",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_036.jpg",
+        "alt": "Oregon Dunes National Recreation Area",
+        "credit": "Sand dunes at Umpqua Beach in the Oregon Dunes National Recreation Area in Douglas County. (Source: Gary Halvorson, Oregon State Archives)"
+      },
+      "moreInfo": {
+        "website": "https://www.fs.usda.gov/siuslaw",
+        "websiteName": "fs.usda.gov/siuslaw",
+        "fullText": "For more information: Visit fs.usda.gov/siuslaw and search \"Oregon Dunes\""
+      },
+      "geo": {
+        "lat": 43.7236,
+        "lng": -124.1906
+      },
+      "sortOrder": 9
+    },
+    {
+      "id": 11,
+      "name": "Gilliam County",
+      "slug": "gilliam-county",
+      "primaryAttraction": {
+        "name": "Cottonwood Canyon State Park",
+        "description": "At over 8,000 acres, Cottonwood Canyon State Park in Gilliam County is one of Oregon's newest and largest state parks. Enveloped by vertical cliffs, the park features unmatched access to the John Day River—the longest free-flowing river west of the Rockies. At the park, you can fish for steelhead and smallmouth bass, hike old roads and trails into the outback, and pitch a tent. And for a real John Day adventure, canoe, kayak, or float down the 10 mile stretch of the river from the Cottonwood Bridge to the Starvation Lane take-out. Tip: Stick around for nightfall—Cottonwood has some of the best stargazing in the whole state.",
+        "featured": true,
+        "geo": {
+          "lat": 45.1864,
+          "lng": -120.3431
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "Earl Snell Memorial Park",
+          "url": "https://www.cityofarlingtonoregon.com/play.html",
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "Historic Main Street Condon",
+          "url": "http://cityofcondon.com/",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "City of Lonerock's Lone Rock and historic downtown",
+          "url": "https://www.co.gilliam.or.us/recreation/communities/lonerock/index.php",
+          "featured": false
+        },
+        {
+          "id": 4,
+          "name": "Albert Phillipi Park",
+          "url": "https://www.co.sherman.or.us/park-facilities/",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_039.jpg",
+        "alt": "Cottonwood Canyon State Park",
+        "credit": "Cottonwood Canyon State Park in Gilliam County. (Source: Team Merkley)"
+      },
+      "moreInfo": {
+        "website": "https://stateparks.oregon.gov/",
+        "websiteName": "stateparks.oregon.gov",
+        "fullText": "For more information: Visit stateparks.oregon.gov and search \"Cottonwood Canyon\""
+      },
+      "geo": {
+        "lat": 45.1864,
+        "lng": -120.3431
+      },
+      "sortOrder": 10
+    },
+    {
+      "id": 12,
+      "name": "Grant County",
+      "slug": "grant-county",
+      "primaryAttraction": {
+        "name": "John Day Fossil Beds - Sheep Rock Unit and Thomas Condon Visitor Center",
+        "description": "Want to see remnants of ancient camels and rhinos and be floored by prehistoric flora and fauna? Then John Day Fossil Beds National Monument in Grant County is for you! The Thomas Condon Visitor Center is a great place for families and friends to journey to the land before time to learn more about the world-renowned paleontology and geology of the region, and see a fantastic fossil record that spans over 40 million years. You can also take a hike through the colorful Sheep Rock Unit to see green layers of volcanic ash. Before leaving, walk the peaceful grounds of the Historic Cant Ranch, the headquarters for this monumental treasure.",
+        "featured": true,
+        "geo": {
+          "lat": 44.5533,
+          "lng": -119.6447
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "Kam Wah Chung State Heritage Site",
+          "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=5",
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "Bates State Park",
+          "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=109",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "Hiking in the Strawberry Mountain Wilderness via picturesque Prairie City",
+          "url": "https://www.fs.usda.gov/recarea/malheur/recarea/?recid=39906",
+          "featured": false
+        },
+        {
+          "id": 4,
+          "name": "Canyon City Historic District",
+          "url": "https://www.townofcanyoncityor.com/",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_042.jpg",
+        "alt": "Thomas Condon Visitor Center fossil exhibit",
+        "credit": "A fossil exhibit at the Thomas Condon Visitor Center in Grant County. (Source: National Park Service/N. Famoso)"
+      },
+      "moreInfo": {
+        "website": "http://nps.gov/",
+        "websiteName": "nps.gov",
+        "fullText": "For more information: Visit nps.gov and search \"Thomas Condon Center\""
+      },
+      "geo": {
+        "lat": 44.5533,
+        "lng": -119.6447
+      },
+      "sortOrder": 11
+    },
+    {
+      "id": 13,
+      "name": "Harney County",
+      "slug": "harney-county",
+      "primaryAttraction": {
+        "name": "Alvord Desert",
+        "description": "In a very remote part of Harney County, covered in the rain shadow of the Steens Mountains, lies one of Oregon's most breathtakingly still landscapes—the Alvord Desert. This desolate expanse of cracked, sun-dried lake bed ripples across the earth. Roughly 12 miles long and 7 miles wide, the Alvord averages only about seven inches of rain per year. Because of its barren, wide-open nature, the desert is a favorite spot to go land sailing in the dry season, or you can camp beneath the starry skies in one of the quietest, most secluded spots in Oregon. The beautiful Alvord Desert is extremely remote—please check the weather report and the Bureau of Land Management website for any weather alerts or cautions regarding visiting, and pack extra water, fuel, and essentials if you make the journey.",
+        "featured": true,
+        "geo": {
+          "lat": 42.5519,
+          "lng": -118.5331
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "Steens Mountain Back Country Byway",
+          "url": null,
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "Pete French Round Barn",
+          "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=209",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "Malheur National Wildlife Refuge",
+          "url": "https://www.fws.gov/refuge/malheur",
+          "featured": false
+        },
+        {
+          "id": 4,
+          "name": "Donner und Blitzen Wild and Scenic River",
+          "url": "https://www.blm.gov/programs/national-conservation-lands/oregon-washington/donner-und-blitzen-wsr",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_045.jpg",
+        "alt": "The Alvord Desert",
+        "credit": "The Alvord Desert in Harney County. (Source: Gary Halvorson, Oregon State Archives)"
+      },
+      "moreInfo": {
+        "website": "http://blm.gov/",
+        "websiteName": "blm.gov",
+        "fullText": "For more information: Visit blm.gov and search \"Alvord Desert\""
+      },
+      "geo": {
+        "lat": 42.5519,
+        "lng": -118.5331
+      },
+      "sortOrder": 12
+    },
+    {
+      "id": 14,
+      "name": "Hood River County",
+      "slug": "hood-river-county",
+      "primaryAttraction": {
+        "name": "The Spit and Event Site",
+        "description": "Head lickety-split to the Event Site and Spit in Hood River County where all kinds of wind and water sports on the Columbia River come alive. Wind flows through the towering river canyon walls and into the City of Hood River, making it a world-renowned windsurfing destination. The Spit is a nearly half-mile long sandbar that's also perfect to launch a kite and go stand-up paddle boarding from. Bonus: the beachfront is located right near the city's historic downtown that's bustling with fun shops and breweries.",
+        "featured": true,
+        "geo": {
+          "lat": 45.7158,
+          "lng": -121.5121
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "Bridge of the Gods/Pacific Crest Trailhead",
+          "url": "https://www.fs.usda.gov/recarea/crgnsa/recarea/?recid=29886",
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "Hood River Fruit Loop",
+          "url": "https://www.hoodriverfruitloop.com/",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_048.jpg",
+        "alt": "The Event Site in Hood River",
+        "credit": "The Event Site in Hood River County. (Source: Port of Hood River)"
+      },
+      "moreInfo": {
+        "website": "http://portofhoodriver.com/",
+        "websiteName": "portofhoodriver.com",
+        "fullText": "For more information: Visit portofhoodriver.com and search \"Event Site\""
+      },
+      "geo": {
+        "lat": 45.7158,
+        "lng": -121.5121
+      },
+      "sortOrder": 13
+    },
+    {
+      "id": 15,
+      "name": "Jackson County",
+      "slug": "jackson-county",
+      "primaryAttraction": {
+        "name": "See a Play at the Oregon Shakespeare Festival",
+        "description": "Shall I compare thee, Oregon Shakespeare Festival, to a summer's day? Dazzling audiences since 1935, this magical experience in Jackson County has proven 'tis more lovely and more temperate than just about any festival around as it draws actors from across the globe to perform the iconic works of William Shakespeare on one of the festival's several stages. So, if you're asking yourself \"to go or not to go\" to a play at the Oregon Shakespeare Festival, know this is unquestionably the best opportunity to see The Bard's canon brought to life on this side of the pond.",
+        "featured": true,
+        "geo": {
+          "lat": 42.1945,
+          "lng": -122.7095
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "Pilot Rock in Cascade-Siskiyou National Monument",
+          "url": "https://www.travelmedford.org/pilot-rock",
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "Mt. Ashland Grouse Gap Loop",
+          "url": "https://www.fs.usda.gov/recarea/rogue-siskiyou/recarea/?recid=70320",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "Grizzly Peak Trail",
+          "url": "https://www.blm.gov/visit/grizzly-peak-trail",
+          "featured": false
+        },
+        {
+          "id": 4,
+          "name": "Upper and Lower Table Rock Trails",
+          "url": "https://www.blm.gov/programs/recreation/recreation-activities/oregon-washington/tablerocks/plan-your-visit",
+          "featured": false
+        },
+        {
+          "id": 5,
+          "name": "East Applegate Ridge Trail",
+          "url": "https://www.blm.gov/visit/east-applegate-ridge-trail",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_051.jpg",
+        "alt": "Oregon Shakespeare Festival",
+        "credit": "Oregon Shakespeare Festival in Jackson County. (Source: Oregon Shakespeare Festival)"
+      },
+      "moreInfo": {
+        "website": "http://osfashland.org/",
+        "websiteName": "osfashland.org",
+        "fullText": "For more information: Visit osfashland.org"
+      },
+      "geo": {
+        "lat": 42.1945,
+        "lng": -122.7095
+      },
+      "sortOrder": 14
+    },
+    {
+      "id": 16,
+      "name": "Jefferson County",
+      "slug": "jefferson-county",
+      "primaryAttraction": {
+        "name": "The Cove Palisades State Park",
+        "description": "Endless recreational opportunities, including excellent hiking, camping, boating, fishing, and bird watching, await you at The Cove Palisades State Park in Jefferson County. This stunner in the state's center is located on the waters of Lake Billy Chinook, nestled deep within canyons formed by the Crooked, Deschutes, and Metolius rivers. With all of the canyons, rivers, and lakes (oh my!), this park is a relaxing slice of paradise that proves there's no place like Oregon.",
+        "featured": true,
+        "geo": {
+          "lat": 44.5828,
+          "lng": -121.2792
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "The Museum at Warm Springs",
+          "url": "https://warmsprings-nsn.gov/program/the-museum-at-warm-springs/",
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "Black Butte fire lookout",
+          "url": "https://www.fs.usda.gov/recarea/deschutes/recreation/recarea/?recid=71834&actid=50",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "Tam-A-Lau Loop Hike",
+          "url": "https://www.fs.usda.gov/recarea/ochoco/recarea/?recid=80948",
+          "featured": false
+        },
+        {
+          "id": 4,
+          "name": "Crooked River High Bridge",
+          "url": null,
+          "featured": false
+        },
+        {
+          "id": 5,
+          "name": "Metolius Balancing Rocks",
+          "url": "https://www.bendbulletin.com/explore/nature-on-an-even-keel-at-central-oregon-s-balancing-rock/article_ba7881c6-f342-11ed-be96-4f9f7e07eac1.html",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_054.jpg",
+        "alt": "The Cove Palisades State Park",
+        "credit": "The Cove Palisades State Park in Jefferson County. (Source: Gary Halvorson, Oregon State Archives)"
+      },
+      "moreInfo": {
+        "website": "http://stateparks.oregon.gov/",
+        "websiteName": "stateparks.oregon.gov",
+        "fullText": "For more information: Visit stateparks.oregon.gov and search \"Cove Palisades\""
+      },
+      "geo": {
+        "lat": 44.5828,
+        "lng": -121.2792
+      },
+      "sortOrder": 15
+    },
+    {
+      "id": 17,
+      "name": "Josephine County",
+      "slug": "josephine-county",
+      "primaryAttraction": {
+        "name": "The Oregon Caves",
+        "description": "Call it Oregon's very own Cave of Wonders! Buried within the Siskiyou Mountains in Josephine County you'll find The Oregon Caves National Monument and Preserve—a labyrinth of bends, twists, and treasures that will truly allow you to explore a mountain from the inside and out. A hunter named Elijah Davidson came across the cave in 1874 while chasing after his dog who went in after a bear, and the cave went on to become the state's first national monument in 1909. Visit the \"Marble Halls of Oregon\" for yourself to see the colorful rocks of the cave that appear painted from the eons of acidic water that seeped into them. Tip: if you are super adventurous, check out the \"Off Trail Caving Tour\" opportunity and be sure to schedule ahead to secure your tour slot.",
+        "featured": true,
+        "geo": {
+          "lat": 42.0978,
+          "lng": -123.4069
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "Hellgate Recreation Area",
+          "url": "https://www.blm.gov/programs/national-conservation-lands/oregon-washington/rogue-wsr/camping/hellgate",
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "Grants Pass Caveman",
+          "url": "https://www.grantspasschamber.org/caveman/",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "Wolf Creek Inn State Heritage Site",
+          "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=74",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_057.jpg",
+        "alt": "Oregon Caves National Monument and Preserve",
+        "credit": "Oregon Caves National Monument and Preserve in Josephine County. (Source: Team Merkley)"
+      },
+      "moreInfo": {
+        "website": "http://nps.gov/",
+        "websiteName": "nps.gov",
+        "fullText": "For more information: Visit nps.gov and search \"Oregon Caves\""
+      },
+      "geo": {
+        "lat": 42.0978,
+        "lng": -123.4069
+      },
+      "sortOrder": 16
+    },
+    {
+      "id": 18,
+      "name": "Klamath County",
+      "slug": "klamath-county",
+      "primaryAttraction": {
+        "name": "Crater Lake National Park",
+        "description": "There is nothing else like Crater Lake on Earth. It was formed nearly 8,000 years ago when Mount Mazama erupted so forcefully that its tall peak collapsed in on itself and formed a deep caldera in Klamath County. Over the last 700 years, that caldera filled with rain and snow, creating Crater Lake—the deepest lake in the United States at nearly 2,000 feet, and the clearest and cleanest large body of water in the world. Trek down Cleetwood Cove Trail to take a brisk swim or catch a boat or trolley tour instead. There are endless adventures awaiting you at Oregon's only national park.",
+        "featured": true,
+        "geo": {
+          "lat": 42.8684,
+          "lng": -122.1685
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "Upper Klamath Lake National Wildlife Refuge",
+          "url": "https://www.fws.gov/refuge/upper-klamath",
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "Spence Mountain",
+          "url": "https://traveloregon.com/things-to-do/outdoor-recreation/bicycling/spence-mountain/",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "Klamath Marsh National Wildlife Refuge",
+          "url": "https://www.fws.gov/refuge/klamath-marsh",
+          "featured": false
+        },
+        {
+          "id": 4,
+          "name": "Jackson F. Kimball State Recreation Site",
+          "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=166",
+          "featured": false
+        },
+        {
+          "id": 5,
+          "name": "Williamson River for trout fishing",
+          "url": "https://www.fs.usda.gov/recarea/fremont-winema/recarea/?recid=59723",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_060.jpg",
+        "alt": "Crater Lake National Park",
+        "credit": "Crater Lake National Park in Klamath County. (Source: Team Merkley)"
+      },
+      "moreInfo": {
+        "website": "http://nps.gov/",
+        "websiteName": "nps.gov",
+        "fullText": "For more information: Visit nps.gov and search \"Crater Lake\""
+      },
+      "geo": {
+        "lat": 42.8684,
+        "lng": -122.1685
+      },
+      "sortOrder": 17
+    },
+    {
+      "id": 19,
+      "name": "Lake County",
+      "slug": "lake-county",
+      "primaryAttraction": {
+        "name": "Fort Rock",
+        "description": "Jutting out amid the barren and flat landscape of the Oregon High Desert, Fort Rock in Lake County demands to be noticed. Standing 200 feet tall and nearly 4,500 feet wide, it is believed to be the result of magma forcefully rising to the surface of a prehistoric lake. Archaeological expeditions have also unearthed countless artifacts belonging to Indigenous peoples of the region, including the famous \"Fort Rock Sandals\" which have been dated to more than 9,000 years old—that's not just the oldest footwear found in Oregon, but the oldest on Earth.",
+        "featured": true,
+        "geo": {
+          "lat": 43.3647,
+          "lng": -121.0633
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "Old Perpetual Geyser",
+          "url": null,
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "Oregon Sunstone Public Collection Site",
+          "url": "https://www.blm.gov/visit/sunstone-collection-area",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "Historic Downtown Paisley",
+          "url": "http://cityofpaisley.net/",
+          "featured": false
+        },
+        {
+          "id": 4,
+          "name": "Hart Mountain National Antelope Refuge",
+          "url": "https://www.fws.gov/refuge/hart-mountain-national-antelope",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_063.jpg",
+        "alt": "Fort Rock State Natural Area",
+        "credit": "Fort Rock State Natural Area in Lake County. (Source: Team Merkley)"
+      },
+      "moreInfo": {
+        "website": "https://stateparks.oregon.gov/",
+        "websiteName": "stateparks.oregon.gov",
+        "fullText": "For more information: Visit stateparks.oregon.gov and search \"Fort Rock\""
+      },
+      "geo": {
+        "lat": 43.3647,
+        "lng": -121.0633
+      },
+      "sortOrder": 18
+    },
+    {
+      "id": 20,
+      "name": "Lane County",
+      "slug": "lane-county",
+      "primaryAttraction": {
+        "name": "Historic Covered Bridges",
+        "description": "If you're looking to drive through a piece of Oregon history, Lane County has you covered—literally! With over 20 covered bridges, Lane County has more of these structures than any other county west of the Mississippi River. Many were built around a hundred years ago to shield wooden bridges from the wear and tear of the Oregon Coast's heavy rain and salty sea air, doubling the life expectancy of these high-quality timber bridges. Today, many covered bridges are still open to pedestrian, bicycle, and vehicle traffic, letting folks admire the beautiful craftsmanship of these structures that harken back to Oregon's past.",
+        "featured": true,
+        "geo": {
+          "lat": 43.7675,
+          "lng": -122.9539
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "Hobbit Trail",
+          "url": "https://thatoregonlife.com/2016/09/hobbit-trail-oregon/",
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "Heceta Head Lighthouse",
+          "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=86",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "Owen Rose Garden",
+          "url": "https://www.eugene-or.gov/Facilities/Facility/Details/124",
+          "featured": false
+        },
+        {
+          "id": 4,
+          "name": "Hayward Field at the University of Oregon",
+          "url": "https://hayward.uoregon.edu/",
+          "featured": false
+        },
+        {
+          "id": 5,
+          "name": "Fall Creek State Recreation Area",
+          "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=176",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_066.jpg",
+        "alt": "Dorena Covered Bridge",
+        "credit": "Dorena Covered Bridge in Lane County. (Source: Gary Halvorson, Oregon State Archives)"
+      },
+      "moreInfo": {
+        "website": "https://www.lanecounty.org/",
+        "websiteName": "lanecounty.org",
+        "fullText": "For more information: Visit lanecounty.org and search \"covered bridges\""
+      },
+      "geo": {
+        "lat": 43.7675,
+        "lng": -122.9539
+      },
+      "sortOrder": 19
+    },
+    {
+      "id": 21,
+      "name": "Lincoln County",
+      "slug": "lincoln-county",
+      "primaryAttraction": {
+        "name": "Cascade Head",
+        "description": "From extraordinary hikes with sweeping views of the Pacific Ocean to safe havens for rare plants and wildlife, Cascade Head in Lincoln County is a slice of paradise on Oregon's Central Coast. In fact, Congress chose this coastal headland as the first non-wilderness land in the United States to be safeguarded as a Scenic-Research Area for its breathtaking ecological and scientific benefits. It was also recognized as a United Nations Biosphere Reserve. One visit and you'll see why: Bald eagles and the Oregon silverspot butterfly—known to live in only a few other places in the world—soar over the exquisite wildflowers and native prairie grasses that make Cascade Head a critical area for both environmental research and delightful recreation.",
+        "featured": true,
+        "geo": {
+          "lat": 45.0572,
+          "lng": -123.9856
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "Oregon Coast Aquarium",
+          "url": "https://aquarium.org/",
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "Thor's Well",
+          "url": "https://www.yachatsoregon.org/295/Thors-Well",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "Drift Creek Falls Suspension Bridge",
+          "url": "https://www.fs.usda.gov/recarea/siuslaw/recarea/?recid=42683",
+          "featured": false
+        },
+        {
+          "id": 4,
+          "name": "Depoe Bay Whale Watching/World's Smallest Harbor",
+          "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=183",
+          "featured": false
+        },
+        {
+          "id": 5,
+          "name": "Roads End State Recreation Area",
+          "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=163",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_069.jpg",
+        "alt": "Cascade Head",
+        "credit": "Cascade Head in Lincoln County. (Source: Matthew Tharp, U.S. Forest Service)"
+      },
+      "moreInfo": {
+        "website": "https://www.fs.usda.gov/siuslaw",
+        "websiteName": "fs.usda.gov/siuslaw",
+        "fullText": "For more information: Visit fs.usda.gov/siuslaw and search \"Cascade Head\""
+      },
+      "geo": {
+        "lat": 45.0572,
+        "lng": -123.9856
+      },
+      "sortOrder": 20
+    },
+    {
+      "id": 22,
+      "name": "Linn County",
+      "slug": "linn-county",
+      "primaryAttraction": {
+        "name": "Tamolitch Blue Pool",
+        "description": "Dubbed \"Blue Pool\" for its vibrant turquoise and topaz blue color, this gorgeous body of water at the base of Tamolitch Falls in Linn County is an inspiration. A lava flow over 1,600 years ago buried a portion of McKenzie River, and when that water resurfaces through the porous lava buried below dry Tamolitch Falls, it produces an intensely cold, crystal-clear blue pool of water. You can see it for yourself by taking a two-mile hike along the McKenzie River Trail in the lush Willamette National Forest.",
+        "featured": true,
+        "geo": {
+          "lat": 44.3178,
+          "lng": -122.0314
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "Albany Carousel",
+          "url": "https://albanycarousel.com/",
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "Stand By Me penny in Brownsville",
+          "url": "https://www.linncountyor.gov/parksrec/page/stand-me-day-july-23-brownsville",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "Sahalie/Koosah Loop",
+          "url": "https://www.fs.usda.gov/recarea/willamette/recarea/?recid=4404",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_072.jpg",
+        "alt": "Tamolitch Blue Pool",
+        "credit": "Tamolitch Blue Pool in Willamette National Forest. (Source: Willamette National Forest)"
+      },
+      "moreInfo": {
+        "website": "http://fs.usda.gov/willamette",
+        "websiteName": "fs.usda.gov/willamette",
+        "fullText": "For more information: Visit fs.usda.gov/willamette and search \"Blue Pool\""
+      },
+      "geo": {
+        "lat": 44.3178,
+        "lng": -122.0314
+      },
+      "sortOrder": 21
+    },
+    {
+      "id": 23,
+      "name": "Malheur County",
+      "slug": "malheur-county",
+      "primaryAttraction": {
+        "name": "Owyhee Canyonlands",
+        "description": "Be sure to pack extra water, fuel, and a spare tire because you are heading to the exhilarating Owyhee Canyonlands! One of the largest undeveloped regions in the lower 48 states, the Owyhee country—often dubbed \"Oregon's Grand Canyon\"—is truly a place to get away from it all. You'll see wildlife, rocky spires, deep pools, and steep canyons. Try the short Timber Gulch hike through sheer cliffs or get splashed on a whitewater adventure on the Owyhee Wild and Scenic River.",
+        "featured": true,
+        "geo": {
+          "lat": 42.8833,
+          "lng": -117.2167
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "Birch Creek Historic Ranch",
+          "url": "https://blm.gov/visit/birch-creek-historic-ranch",
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "Pillars of Rome",
+          "url": "https://visiteasternoregon.com/poi/pillars-of-rome/",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "Lake Owyhee State Park",
+          "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=10",
+          "featured": false
+        },
+        {
+          "id": 4,
+          "name": "Four Rivers Cultural Center",
+          "url": "https://4rcc.com/",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_075.jpg",
+        "alt": "Owyhee Canyonlands",
+        "credit": "Owyhee Canyonlands in Malheur County. (Source: Team Merkley)"
+      },
+      "moreInfo": {
+        "website": "http://blm.gov/",
+        "websiteName": "blm.gov",
+        "fullText": "For more information: Visit blm.gov and search \"Owyhee\""
+      },
+      "geo": {
+        "lat": 42.8833,
+        "lng": -117.2167
+      },
+      "sortOrder": 22
+    },
+    {
+      "id": 24,
+      "name": "Marion County",
+      "slug": "marion-county",
+      "primaryAttraction": {
+        "name": "Oregon State Capitol",
+        "description": "Explore the Beaver State's past and future in Marion County with a visit to the Oregon State Capitol building in Salem, Oregon's capital city. It is one of only three state capitols built in the Art Deco architectural style and is topped with the Oregon Pioneer—a 22 foot tall bronze sculpture of a golden woodsman. Guided tours are available, including a tour of the tower which offers a 360-degree view of the City of Salem and surrounding Willamette Valley. Hint: try to time your visit to go in the spring, because the cherry blossoms blooming around the Capitol are a feast for the senses.",
+        "featured": true,
+        "geo": {
+          "lat": 44.9389,
+          "lng": -123.0303
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "Silver Falls State Park",
+          "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=151",
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "The Oregon Garden",
+          "url": "https://www.oregongarden.org/",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "The Champoeg Heritage Site",
+          "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=79",
+          "featured": false
+        },
+        {
+          "id": 4,
+          "name": "Willamette Heritage Center",
+          "url": "https://www.willametteheritage.org/about-willamette-heritage-center/",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_078.jpg",
+        "alt": "Oregon State Capitol",
+        "credit": "Oregon State Capitol in Marion County. (Source: Team Merkley)"
+      },
+      "moreInfo": {
+        "website": "http://oregoncapitol.com/",
+        "websiteName": "oregoncapitol.com",
+        "fullText": "For more information: Visit oregoncapitol.com"
+      },
+      "geo": {
+        "lat": 44.9389,
+        "lng": -123.0303
+      },
+      "sortOrder": 23
+    },
+    {
+      "id": 25,
+      "name": "Morrow County",
+      "slug": "morrow-county",
+      "primaryAttraction": {
+        "name": "Blue Mountain Scenic Byway",
+        "description": "Whether traveling by car, bicycle, or motorcycle, the beautiful Blue Mountain Scenic Byway in Morrow County will transport you through a slice of heaven in Eastern Oregon. This long, paved, two-lane stretch will take you through the historic communities of Ione, Lexington, and Heppner. Along the way, be sure to look for the Oregon Trail, stop to admire the trees in the Umatilla National Forest, or try to catch a glimpse of Rocky Mountain Elk. Tip: For a full adventure of the byway, start on the west side at Heppner Junction off of I-84 and continue east through Morrow County all the way to Baker City. These views of the Blues will fill you with joy.",
+        "featured": true,
+        "geo": {
+          "lat": 45.3554,
+          "lng": -119.5569
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "Umatilla National Wildlife Refuge",
+          "url": "https://www.fws.gov/refuge/umatilla",
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "Port of Morrow's SAGE Center",
+          "url": "https://traveloregon.com/things-to-do/attractions/museums/sage-center/",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "Morrow County Off-Highway Vehicle (OHV) Park",
+          "url": "https://ohv.morrowcountyparks.org/",
+          "featured": false
+        },
+        {
+          "id": 4,
+          "name": "Morrow County Museum",
+          "url": "http://www.morrowcountymuseum.com/",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_081.jpg",
+        "alt": "Blue Mountain Scenic Byway",
+        "credit": "A pond along the Blue Mountain Scenic Byway in Morrow County. (Source: Gary Halvorson, Oregon State Archives)"
+      },
+      "moreInfo": {
+        "website": "http://fs.usda.gov/umatilla",
+        "websiteName": "fs.usda.gov/umatilla",
+        "fullText": "For more information: Visit fs.usda.gov/umatilla and search \"Blue Mountain Scenic Byway\""
+      },
+      "geo": {
+        "lat": 45.3554,
+        "lng": -119.5569
+      },
+      "sortOrder": 24
+    },
+    {
+      "id": 26,
+      "name": "Multnomah County",
+      "slug": "multnomah-county",
+      "primaryAttraction": {
+        "name": "Multnomah Falls",
+        "description": "In far east Multnomah County, just a short 30 mile trek outside of Portland, you'll find one of the Pacific Northwest's most beautiful and recognizable natural features—Multnomah Falls. This 620-foot-tall striking presence is fed by underground springs from Larch Mountain, making it the tallest waterfall in the whole of Oregon. More than two million people visit this jewel in the Columbia River Gorge every year to take in the view, especially from atop the century-old Multnomah Falls Bridge, and visit the historic Multnomah Falls Lodge. Bonus: the area also boasts stellar hikes and over two dozen other wonderful waterfalls that are all just a hop, skip, and a jump from one another.",
+        "featured": true,
+        "geo": {
+          "lat": 45.5762,
+          "lng": -122.1158
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "Crown Point – Vista House",
+          "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=108",
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "Portland International Rose Test Garden",
+          "url": "https://www.portland.gov/parks/washington-park-international-rose-test-garden",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "Sherrard Point on Larch Mountain",
+          "url": "https://www.fs.usda.gov/recarea/crgnsa/recarea/?recid=30070",
+          "featured": false
+        },
+        {
+          "id": 4,
+          "name": "Portland Japanese Garden",
+          "url": "https://japanesegarden.org/",
+          "featured": false
+        },
+        {
+          "id": 5,
+          "name": "Lan Su Chinese Garden",
+          "url": "https://lansugarden.org/",
+          "featured": false
+        },
+        {
+          "id": 6,
+          "name": "The Oregon Zoo",
+          "url": "https://www.oregonzoo.org/",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_084.jpg",
+        "alt": "Multnomah Falls",
+        "credit": "Multnomah Falls in Multnomah County. (Source: Team Merkley)"
+      },
+      "moreInfo": {
+        "website": "http://fs.usda.gov/crgnsa",
+        "websiteName": "fs.usda.gov/crgnsa",
+        "fullText": "For more information: Visit fs.usda.gov/crgnsa, click on \"Recreation\" under the \"Visit Us\" tab and scroll to \"Multnomah Falls\""
+      },
+      "geo": {
+        "lat": 45.5762,
+        "lng": -122.1158
+      },
+      "sortOrder": 25
+    },
+    {
+      "id": 27,
+      "name": "Polk County",
+      "slug": "polk-county",
+      "primaryAttraction": {
+        "name": "Valley of the Giants",
+        "description": "Step back in time to hear stories only ancient trees can tell as you wander through Valley of the Giants in Polk County. Among the largest Douglas-firs and Western Hemlocks in the Oregon Coast Range can be found in this old-growth forest, with many of the trees reaching twenty feet in circumference, 200 feet tall, and 400 to 450 years old. The trees are protected in a 51 acre Outstanding Natural Area so teeming with plants, fungi, and wildlife that it feels otherworldly. Note: Valley of the Giants is always closed during fire season, and other conditions sometimes apply, so make sure to check the Bureau of Land Management's website before you go.",
+        "featured": true,
+        "geo": {
+          "lat": 44.8567,
+          "lng": -123.6683
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "Chachalu Tribal Museum and Cultural Center",
+          "url": "https://www.grandronde.org/history-culture/culture/chachalu-museum-and-cultural-center/",
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "Baskett Slough Wildlife Refuge",
+          "url": "https://www.fws.gov/refuge/baskett-slough",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "Monmouth-Independence Trolley",
+          "url": "https://www.mitrolley.org/",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_087.jpg",
+        "alt": "Valley of the Giants",
+        "credit": "Valley of the Giants in Polk County. (Source: U.S. Bureau of Land Management)"
+      },
+      "moreInfo": {
+        "website": "http://blm.gov/",
+        "websiteName": "blm.gov",
+        "fullText": "For more information: Visit blm.gov and search \"Valley of the Giants\""
+      },
+      "geo": {
+        "lat": 44.8567,
+        "lng": -123.6683
+      },
+      "sortOrder": 26
+    },
+    {
+      "id": 28,
+      "name": "Sherman County",
+      "slug": "sherman-county",
+      "primaryAttraction": {
+        "name": "Macks Canyon Recreation Site",
+        "description": "If you're looking for an adventure off the beaten path filled with outdoor fun, head to Macks Canyon Recreation Site in Sherman County. Located on the Wild and Scenic Lower Deschutes River, this little-known treasure offers fishing, boating, and camping opportunities galore all set against a stunning backdrop with a storied past. It was once home to a prehistoric winter village of the Sahaptin peoples of the Columbian Plateau, and the spot also set the scene for a railroad war in the early 1900s. Here, two tycoons battled to be the first to reach Bend, and the road to reach Macks Canyon is what remains of the losing line. The route is also one of only a few dozen National Back Country Byways in the West, making the journey here almost as beautiful as the destination.",
+        "featured": true,
+        "geo": {
+          "lat": 45.1856,
+          "lng": -120.8278
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "Ghost Town of Kent",
+          "url": "https://www.co.sherman.or.us/ghost-towns-old-west/",
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "Sherman Historical Museum",
+          "url": "https://www.shermanmuseum.org/",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "Sherman County Courthouse",
+          "url": "https://www.co.sherman.or.us/courthouse/",
+          "featured": false
+        },
+        {
+          "id": 4,
+          "name": "Oregon Trail Cutoff to Barlow Road and Oregon Trail Monuments",
+          "url": "https://www.co.sherman.or.us/oregon-trail-byway/",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_090.jpg",
+        "alt": "Macks Canyon Recreation Site",
+        "credit": "Macks Canyon in Sherman County. (Source: Bob Wick, Bureau of Land Management)"
+      },
+      "moreInfo": {
+        "website": "https://www.blm.gov/",
+        "websiteName": "blm.gov",
+        "fullText": "For more information: Visit blm.gov and search \"Macks Canyon\""
+      },
+      "geo": {
+        "lat": 45.1856,
+        "lng": -120.8278
+      },
+      "sortOrder": 27
+    },
+    {
+      "id": 29,
+      "name": "Tillamook County",
+      "slug": "tillamook-county",
+      "primaryAttraction": {
+        "name": "Cape Kiwanda",
+        "description": "Home to some of the world's most breathtaking, dramatic sunsets, Cape Kiwanda State Natural Area in Tillamook County is a must-see sandstone headland that's constantly being re-sculpted by the churning Pacific Ocean below. You can play along the sprawling beaches, explore the tide pools, and climb the towering dune for a premier view of the Pacific. If you're lucky, you might see a dory boat or two land ashore. Tip: if the winds are from the northwest, you can often see paragliders launching on the north side of the Cape.",
+        "featured": true,
+        "geo": {
+          "lat": 45.2197,
+          "lng": -123.9728
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "Tunnel Beach",
+          "url": "https://www.beachconnection.net/news/maxwell_point_tunnelbeach_oceanside.php",
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "Oregon Coast Scenic Railroad",
+          "url": "https://oregoncoastscenic.org/",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "Neskowin Ghost Forest",
+          "url": "https://traveloregon.com/things-to-do/trip-ideas/neskowin-ghost-forest/",
+          "featured": false
+        },
+        {
+          "id": 4,
+          "name": "Munson Creek Falls State Natural Site",
+          "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=175",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_093.jpg",
+        "alt": "Cape Kiwanda",
+        "credit": "Cape Kiwanda in Tillamook County. (Source: Gary Halvorson, Oregon State Archives)"
+      },
+      "moreInfo": {
+        "website": "https://stateparks.oregon.gov/",
+        "websiteName": "stateparks.oregon.gov",
+        "fullText": "For more information: Visit stateparks.oregon.gov and search \"Cape Kiwanda\""
+      },
+      "geo": {
+        "lat": 45.2197,
+        "lng": -123.9728
+      },
+      "sortOrder": 28
+    },
+    {
+      "id": 30,
+      "name": "Umatilla County",
+      "slug": "umatilla-county",
+      "primaryAttraction": {
+        "name": "Hat Rock State Park",
+        "description": "There are many beautiful boulders in Oregon, but Hat Rock State Park in Umatilla County may be \"a-head\" of the pack for being the most \"cap-tivating.\" Lewis and Clark dubbed it \"Hat Rock\" for its uncanny resemblance to a man's hat. Today, the landmark is the star attraction of a desert oasis with excellent hiking, camping, and sand volleyball opportunities. And if you love to fish, the mighty Columbia River is filled with sturgeon and walleye, while Hat Rock Pond is stocked with rainbow trout. Hats off to this state park that offers plenty of family fun!",
+        "featured": true,
+        "geo": {
+          "lat": 45.7211,
+          "lng": -119.2731
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "Tamástslikt Cultural Institute",
+          "url": null,
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "The historic town of Echo",
+          "url": "https://echo-oregon.com/history/",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "Umatilla Marina",
+          "url": "https://www.umatilla-city.org/marina",
+          "featured": false
+        },
+        {
+          "id": 4,
+          "name": "Pendleton Round-Up",
+          "url": "https://www.pendletonroundup.com/",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_096.jpg",
+        "alt": "Hat Rock State Park",
+        "credit": "Hat Rock in Umatilla County. (Source: Gary Halvorson, Oregon State Archives)"
+      },
+      "moreInfo": {
+        "website": "https://stateparks.oregon.gov/",
+        "websiteName": "stateparks.oregon.gov",
+        "fullText": "For more information: Visit stateparks.oregon.gov and search \"Hat Rock\""
+      },
+      "geo": {
+        "lat": 45.7211,
+        "lng": -119.2731
+      },
+      "sortOrder": 29
+    },
+    {
+      "id": 31,
+      "name": "Union County",
+      "slug": "union-county",
+      "primaryAttraction": {
+        "name": "Anthony Lakes Recreation",
+        "description": "For a quiet, unspoiled mountain landscape that's begging to be explored, take in the Anthony Lakes recreation area's endless, year-round opportunities in the great outdoors. Located in Union County's Elkhorn Range, which it shares with neighboring Baker County, you can venture into a winter wonderland of backcountry skiing or snowboarding, groomed Nordic skiing, or downhill on great powder at a base elevation of 7,000 feet while at Anthony Lakes Mountain Resort. Once the snows melt, ride your mountain bike down the slope and other nearby trails, hike to subalpine lakes, get out your fishing pole, and pitch a tent at Anthony Lake Campground.",
+        "featured": true,
+        "geo": {
+          "lat": 44.9631,
+          "lng": -118.2294
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "Mt. Emily Recreation Area",
+          "url": "https://www.meetmera.org/",
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "Union Main Street Historic District",
+          "url": "https://cityofunion.com/historic-preservation-commission/",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "Union County Museum",
+          "url": "https://ucmuseumoregon.com/",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_099.jpg",
+        "alt": "Anthony Lakes Mountain Resort",
+        "credit": "Anthony Lakes Mountain Resort in Union County. (Source: Gary Halvorson, Oregon State Archives)"
+      },
+      "moreInfo": {
+        "website": "https://anthonylakes.com/",
+        "websiteName": "anthonylakes.com",
+        "fullText": "For more information: Visit anthonylakes.com"
+      },
+      "geo": {
+        "lat": 44.9631,
+        "lng": -118.2294
+      },
+      "sortOrder": 30
+    },
+    {
+      "id": 32,
+      "name": "Wallowa County",
+      "slug": "wallowa-county",
+      "primaryAttraction": {
+        "name": "Wallowa Lake",
+        "description": "Dubbed the \"Swiss Alps of Oregon,\" the Wallowa Lake region of Wallowa County earns the moniker with its magical mountain views and mirror-like water. The lake was formed by glacial events that began millions of years ago, and rests beneath the often snowcapped, 10,000 foot peaks of the Wallowa Mountains. You can camp at the park, enjoy paddling or boating on the lake, or take a nearby trail into the majestic Eagle Cap Wilderness that is filled with several smaller, sparkling lakes. For a special treat, take the Wallowa Lake Tramway's Swiss-made gondola to the top of Mt. Howard for a heavenly view.",
+        "featured": true,
+        "geo": {
+          "lat": 45.2742,
+          "lng": -117.2156
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "Maxville Heritage Interpretive Center",
+          "url": "https://www.maxvilleheritage.org/visit-the-center",
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "Fishing on the Wallowa River",
+          "url": "https://www.rivers.gov/river/wallowa",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "Hells Canyon",
+          "url": "https://www.fs.usda.gov/detail/wallowa-whitman/recreation/?cid=stelprdb5238987",
+          "featured": false
+        },
+        {
+          "id": 4,
+          "name": "City of Joseph's unique arts scene",
+          "url": "https://josephoregon.com/index.php/joseph-or-events/artwalk",
+          "featured": false
+        },
+        {
+          "id": 5,
+          "name": "Nez Perce Wallowa Homeland Visitor Center and Tamkaliks Celebration grounds",
+          "url": "https://www.wallowanezperce.org/visit-homeland",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_102.jpg",
+        "alt": "Wallowa Lake",
+        "credit": "Wallowa Lake in Wallowa County. (Source: Gary Halvorson, Oregon State Archives)"
+      },
+      "moreInfo": {
+        "website": "https://stateparks.oregon.gov/",
+        "websiteName": "stateparks.oregon.gov",
+        "fullText": "For more information: Visit stateparks.oregon.gov and search \"Wallowa Lake\""
+      },
+      "geo": {
+        "lat": 45.2742,
+        "lng": -117.2156
+      },
+      "sortOrder": 31
+    },
+    {
+      "id": 33,
+      "name": "Wasco County",
+      "slug": "wasco-county",
+      "primaryAttraction": {
+        "name": "Shaniko Ghost Town",
+        "description": "Let the wind blow you back in time to see Oregon's most famous \"ghost\" town—Shaniko in Wasco County. Once dubbed the \"Wool Capital of the World,\" today only a few dozen people still live in the town, which has one hotel and a few local businesses that mostly operate in the spring and summer. But while Shaniko sits off the beaten path, the city is filled with history and charm that immerses visitors in the Old West. So, grab your camera and snap some pictures of wooden sidewalks and the old city hall that houses a jail, a school, and a post office. And if you're there in August, check out \"Shaniko Days\"—the annual festival that brings out hundreds of folks to celebrate this special slice of Oregon history.",
+        "featured": true,
+        "geo": {
+          "lat": 45.0073,
+          "lng": -120.7489
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "Deschutes River Rafting",
+          "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=29",
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "Neon Sign Museum",
+          "url": "https://www.nationalneonsignmuseum.org/",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "Mosier Twin Tunnels",
+          "url": "https://traveloregon.com/things-to-do/culture-history/historic-sites-oregon-trail/mosier-twin-tunnels/",
+          "featured": false
+        },
+        {
+          "id": 4,
+          "name": "White River Falls State Park",
+          "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=28",
+          "featured": false
+        },
+        {
+          "id": 5,
+          "name": "Rowena Crest",
+          "url": "https://www.nps.gov/places/000/rowena-crest-viewpoint.htm",
+          "featured": false
+        },
+        {
+          "id": 6,
+          "name": "Antelope - Oregon's First DarkSky International Community",
+          "url": "https://darksky.org/news/antelope-oregon/",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_105.jpg",
+        "alt": "Shaniko Ghost Town",
+        "credit": "Shaniko Ghost Town in Wasco County. (Source: Gary Halvorson, Oregon State Archives)"
+      },
+      "moreInfo": {
+        "website": "https://cityofshaniko.org/",
+        "websiteName": "cityofshaniko.org",
+        "fullText": "For more information: Visit cityofshaniko.org"
+      },
+      "geo": {
+        "lat": 45.0073,
+        "lng": -120.7489
+      },
+      "sortOrder": 32
+    },
+    {
+      "id": 34,
+      "name": "Washington County",
+      "slug": "washington-county",
+      "primaryAttraction": {
+        "name": "The Tualatin River National Wildlife Refuge",
+        "description": "As one of only a handful of urban national wildlife refuges across America, the Tualatin River National Wildlife Refuge feels like an oasis in Washington County. Featuring 900 protected acres that are just a short jaunt from Portland, the refuge has year-round walking trails through oak woodlands and forests and offers wetland views that are perfect for catching a glimpse of abundant native wildlife species, like beavers and western pond turtles. This urban treasure is also a birder's paradise, with over 200 species of birds, including bald eagles, calling the refuge home.",
+        "featured": true,
+        "geo": {
+          "lat": 45.3833,
+          "lng": -122.7978
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "Oro the Giant at Hidden Creek Park West",
+          "url": "https://www.hillsboro-oregon.gov/Home/Components/News/News/14961/4300",
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "Ole Bolle Troll",
+          "url": "https://www.nordicnorthwest.org/troll",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "Quilt Barn Trail",
+          "url": "https://tualatinvalley.org/trip-ideas/2023/09/quilt-barn-trail/",
+          "featured": false
+        },
+        {
+          "id": 4,
+          "name": "Paddle the Tualatin River Water Trail",
+          "url": "https://tualatinvalley.org/trip-ideas/2023/09/paddle-along-the-tualatin-river-national-water-trail/",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_108.jpg",
+        "alt": "The Tualatin River National Wildlife Refuge",
+        "credit": "The Tualatin River National Wildlife Refuge in Washington County. (Source: Carly Hirschmann, U.S. Fish and Wildlife Service)"
+      },
+      "moreInfo": {
+        "website": "http://fws.gov/",
+        "websiteName": "fws.gov",
+        "fullText": "For more information: Visit fws.gov and search \"Tualatin Wildlife Refuge\""
+      },
+      "geo": {
+        "lat": 45.3833,
+        "lng": -122.7978
+      },
+      "sortOrder": 33
+    },
+    {
+      "id": 35,
+      "name": "Wheeler County",
+      "slug": "wheeler-county",
+      "primaryAttraction": {
+        "name": "John Day Fossil Beds – Painted Hills Unit",
+        "description": "John Day Fossil Beds National Monument is just so special it made the list twice—this time for the iconic Painted Hills Unit located in Wheeler County. Marked by a vivid array of red, tan, orange, and black stripes that tell the story of a changing climate, the Painted Hills change hues based on light, moisture levels, and seasons. And hidden among the stunning tapestry of colors lies a world class record of plant and animal evolution, with some leaf fossils dating back 40 million years. Take a hike around this stunning backdrop, but please stay on the trails and don't collect any fossils.",
+        "featured": true,
+        "geo": {
+          "lat": 44.6556,
+          "lng": -120.2542
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "Sutton Mountain Wilderness Study Area",
+          "url": "https://www.blm.gov/programs/national-conservation-lands/oregon-washington/sutton-mtn-wsa",
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "Dig for fossils at Wheeler High School",
+          "url": "https://oregonpaleolandscenter.com/wheeler-high-school-fossil-beds",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "Spring Basin Wilderness",
+          "url": "https://www.blm.gov/visit/spring-basin-wilderness",
+          "featured": false
+        },
+        {
+          "id": 4,
+          "name": "Historic Wheeler County Courthouse",
+          "url": "https://www.wheelercountyoregon.com/about-us",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_111.jpg",
+        "alt": "John Day Fossil Beds – Painted Hills Unit",
+        "credit": "John Day Fossil Beds National Monument in Wheeler County. (Source: Gary Halvorson, Oregon State Archives)"
+      },
+      "moreInfo": {
+        "website": "http://nps.gov/",
+        "websiteName": "nps.gov",
+        "fullText": "For more information: Visit nps.gov and search \"Painted Hills\""
+      },
+      "geo": {
+        "lat": 44.6556,
+        "lng": -120.2542
+      },
+      "sortOrder": 34
+    },
+    {
+      "id": 36,
+      "name": "Yamhill County",
+      "slug": "yamhill-county",
+      "primaryAttraction": {
+        "name": "Evergreen Aviation and Space Museum",
+        "description": "Nestled within the rolling hills and vine-yards of Yamhill County is the Evergreen Aviation and Space Museum, home of famed aviator Howard Hughes' iconic Spruce Goose—the largest flying boat ever built. Your imagination will take flight as you tour the cockpit of the aircraft and ex-perience American aviation history on the big screen.",
+        "featured": true,
+        "geo": {
+          "lat": 45.2042,
+          "lng": -123.1436
+        }
+      },
+      "additionalAttractions": [
+        {
+          "id": 1,
+          "name": "Yamhill County's many vineyards and wineries",
+          "url": "https://www.willamettevalley.org/wine",
+          "featured": false
+        },
+        {
+          "id": 2,
+          "name": "Glacial Erratic Rock",
+          "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=96",
+          "featured": false
+        },
+        {
+          "id": 3,
+          "name": "Historic downtown McMinnville",
+          "url": "https://visitmcminnville.com/activities/historic-downtown-mcminnville/",
+          "featured": false
+        }
+      ],
+      "image": {
+        "src": "images/Image_114.jpg",
+        "alt": "Evergreen Aviation and Space Museum",
+        "credit": "The Spruce Goose at the Evergreen Aviation and Space Museum in Yamhill County. (Source: Evergreen Aviation and Space Museum)"
+      },
+      "moreInfo": {
+        "website": "https://www.evergreenmuseum.org/",
+        "websiteName": "evergreenmuseum.org",
+        "fullText": "For more information: Visit evergreenmuseum.org"
+      },
+      "geo": {
+        "lat": 45.2042,
+        "lng": -123.1436
+      },
+      "sortOrder": 35
+    }
+  ]
+}

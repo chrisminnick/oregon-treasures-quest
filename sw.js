@@ -1,5 +1,5 @@
 // Service Worker for offline caching
-const CACHE_NAME = 'site-cache-v1';
+const CACHE_NAME = 'site-cache-v2';
 const urlsToCache = [
   "/",
   "/index.html",
@@ -87,7 +87,9 @@ self.addEventListener('install', (event) => {
     caches.open(CACHE_NAME)
       .then((cache) => {
         console.log('Opened cache');
-        return cache.addAll(urlsToCache);
+        return cache.addAll(urlsToCache).catch((error) => {
+          console.error('Failed to cache some resources:', error);
+        });
       })
   );
   self.skipWaiting();
@@ -110,29 +112,71 @@ self.addEventListener('activate', (event) => {
   return self.clients.claim();
 });
 
-// Fetch event - serve from cache, fallback to network
+// Fetch event - network first, cache fallback, with aggressive caching
 self.addEventListener('fetch', (event) => {
+  const url = new URL(event.request.url);
+  
+  // Skip cross-origin requests (like Google Maps)
+  if (url.origin !== location.origin) {
+    return;
+  }
+
   event.respondWith(
     caches.match(event.request)
-      .then((response) => {
-        if (response) {
-          return response;
+      .then((cachedResponse) => {
+        // If we have it cached, return it immediately
+        // But also fetch in background to update cache
+        if (cachedResponse) {
+          // Try to update cache in background
+          fetch(event.request).then((response) => {
+            if (response && response.status === 200) {
+              caches.open(CACHE_NAME).then((cache) => {
+                cache.put(event.request, response.clone());
+              });
+            }
+          }).catch(() => {
+            // Offline or fetch failed, but we already have cached version
+          });
+          return cachedResponse;
         }
-        const fetchRequest = event.request.clone();
-        return fetch(fetchRequest).then((response) => {
-          if (!response || response.status !== 200 || response.type !== 'basic') {
+
+        // Not in cache, try network
+        return fetch(event.request).then((response) => {
+          // Check if valid response
+          if (!response || response.status !== 200) {
             return response;
           }
+
+          // Clone and cache for future use
           const responseToCache = response.clone();
-          caches.open(CACHE_NAME)
-            .then((cache) => {
-              if (event.request.method === 'GET') {
-                cache.put(event.request, responseToCache);
-              }
-            });
+          caches.open(CACHE_NAME).then((cache) => {
+            if (event.request.method === 'GET') {
+              cache.put(event.request, responseToCache);
+            }
+          });
+
           return response;
-        }).catch(() => {
-          return caches.match('/index.html');
+        }).catch((error) => {
+          console.log('Fetch failed, checking cache for fallback:', error);
+          
+          // If it's a page request, try to return a cached page
+          if (event.request.destination === 'document') {
+            return caches.match('/index.html').then((response) => {
+              return response || new Response('Offline - Please connect to the internet', {
+                status: 503,
+                statusText: 'Service Unavailable',
+                headers: new Headers({
+                  'Content-Type': 'text/html'
+                })
+              });
+            });
+          }
+          
+          // For other resources (CSS, images), return error
+          return new Response('Resource not available offline', {
+            status: 503,
+            statusText: 'Service Unavailable'
+          });
         });
       })
   );
