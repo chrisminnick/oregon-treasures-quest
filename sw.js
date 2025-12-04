@@ -40,7 +40,7 @@ const urlsToCache = [
   "/pages/washington-county.html",
   "/pages/wheeler-county.html",
   "/pages/yamhill-county.html",
-  "images/Image_001.png",
+  "images/2025-Logo.png",
   "images/Image_002.png",
   "/images/Image_009.jpg",
   "/qr-codes/2025-oregon-treasures-quest-custom-qr.png",

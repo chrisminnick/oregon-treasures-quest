@@ -5,14 +5,14 @@
     "baseUrl": "https://chrisminnick.github.io/oregon-treasures-quest",
     "primaryColor": "#00363b",
     "secondaryColor": "#205e9e",
-    "generatedAt": "2025-12-04T01:32:17.111Z"
+    "generatedAt": "2025-12-04T15:52:25.924Z"
   },
   "homepage": {
     "title": "2025 Guide to Oregon's Treasures",
     "subtitle": "Treasures worth exploring in each of Oregon's 36 counties",
     "introText": "",
     "pagesTitle": "Explore All Pages",
-    "headerImage": "images/Image_001.png",
+    "headerImage": "images/2025-Logo.png",
     "logoImage": "images/Image_002.png"
   },
   "pages": [
