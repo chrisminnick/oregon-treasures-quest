@@ -409,16 +409,28 @@
           .then((registration) => {
             console.log('Service Worker registered:', registration.scope);
             
-            // Show notification when installing (first visit)
-            if (registration.installing) {
+            // Show notification when installing (first visit) or waiting (update)
+            const worker = registration.installing || registration.waiting;
+            if (worker) {
+              console.log('Service worker installing/waiting, showing notification');
               showCachingNotification();
-              registration.installing.addEventListener('statechange', (e) => {
+              worker.addEventListener('statechange', (e) => {
+                console.log('Service worker state changed:', e.target.state);
                 if (e.target.state === 'activated') {
                   hideCachingNotification();
                   showConnectionStatus('cached');
                 }
               });
             }
+            
+            // Listen for messages from the service worker
+            navigator.serviceWorker.addEventListener('message', (event) => {
+              console.log('Message from SW:', event.data);
+              if (event.data.type === 'CACHE_COMPLETE') {
+                hideCachingNotification();
+                showConnectionStatus('cached');
+              }
+            });
           })
           .catch((error) => {
             console.log('Service Worker registration failed:', error);

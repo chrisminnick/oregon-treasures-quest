@@ -111,6 +111,12 @@ self.addEventListener('install', (event) => {
       })
       .then(() => {
         console.log('All resources cached successfully!');
+        // Notify all clients that caching is complete
+        self.clients.matchAll().then(clients => {
+          clients.forEach(client => {
+            client.postMessage({ type: 'CACHE_COMPLETE' });
+          });
+        });
       })
       .catch((error) => {
         console.error('Cache installation failed:', error);
