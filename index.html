@@ -1188,15 +1188,10 @@
 
 
   <script>
-    (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.googleapis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
-      key: "AIzaSyBjy8jrq0thxr3_lKfykb7LV1cVz2TBBwc",
-      v: "weekly",
-    });
-
     async function initMap() {
       const mapContainer = document.getElementById('map-container');
       
-      // Check if offline
+      // Check if offline first - before loading any Google Maps code
       if (!navigator.onLine) {
         mapContainer.innerHTML = `
           <div style="text-align: center; padding: 40px 20px;">
@@ -1208,6 +1203,18 @@
           </div>
         `;
         return;
+      }
+
+      // Load Google Maps API dynamically only when online
+      if (!window.google || !window.google.maps) {
+        await new Promise((resolve, reject) => {
+          (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.googleapis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+            key: "AIzaSyBjy8jrq0thxr3_lKfykb7LV1cVz2TBBwc",
+            v: "weekly",
+          });
+          // Wait a bit for the loader to initialize
+          setTimeout(resolve, 100);
+        });
       }
 
       const locations = [{"lat":44.814608,"lng":-117.72884,"title":"Baker County","url":"pages/baker-county.html"},{"lat":44.5034,"lng":-123.5581,"title":"Benton County","url":"pages/benton-county.html"},{"lat":45.3311,"lng":-121.7113,"title":"Clackamas County","url":"pages/clackamas-county.html"},{"lat":46.17837,"lng":-123.98109,"title":"Clatsop County","url":"pages/clatsop-county.html"},{"lat":45.7547,"lng":-122.8778,"title":"Columbia County","url":"pages/columbia-county.html"},{"lat":43.2894,"lng":-124.3267,"title":"Coos County","url":"pages/coos-county.html"},{"lat":44.2919,"lng":-120.2544,"title":"Crook County","url":"pages/crook-county.html"},{"lat":42.8372,"lng":-124.5647,"title":"Curry County","url":"pages/curry-county.html"},{"lat":44.3672,"lng":-121.1406,"title":"Deschutes County","url":"pages/deschutes-county.html"},{"lat":43.7236,"lng":-124.1906,"title":"Douglas County","url":"pages/douglas-county.html"},{"lat":45.1864,"lng":-120.3431,"title":"Gilliam County","url":"pages/gilliam-county.html"},{"lat":44.5533,"lng":-119.6447,"title":"Grant County","url":"pages/grant-county.html"},{"lat":42.5519,"lng":-118.5331,"title":"Harney County","url":"pages/harney-county.html"},{"lat":45.7158,"lng":-121.5121,"title":"Hood River County","url":"pages/hood-river-county.html"},{"lat":42.1945,"lng":-122.7095,"title":"Jackson County","url":"pages/jackson-county.html"},{"lat":44.5828,"lng":-121.2792,"title":"Jefferson County","url":"pages/jefferson-county.html"},{"lat":42.0978,"lng":-123.4069,"title":"Josephine County","url":"pages/josephine-county.html"},{"lat":42.8684,"lng":-122.1685,"title":"Klamath County","url":"pages/klamath-county.html"},{"lat":43.3647,"lng":-121.0633,"title":"Lake County","url":"pages/lake-county.html"},{"lat":43.7675,"lng":-122.9539,"title":"Lane County","url":"pages/lane-county.html"},{"lat":45.0572,"lng":-123.9856,"title":"Lincoln County","url":"pages/lincoln-county.html"},{"lat":44.3178,"lng":-122.0314,"title":"Linn County","url":"pages/linn-county.html"},{"lat":42.8833,"lng":-117.2167,"title":"Malheur County","url":"pages/malheur-county.html"},{"lat":44.9389,"lng":-123.0303,"title":"Marion County","url":"pages/marion-county.html"},{"lat":45.3554,"lng":-119.5569,"title":"Morrow County","url":"pages/morrow-county.html"},{"lat":45.5762,"lng":-122.1158,"title":"Multnomah County","url":"pages/multnomah-county.html"},{"lat":44.8567,"lng":-123.6683,"title":"Polk County","url":"pages/polk-county.html"},{"lat":45.1856,"lng":-120.8278,"title":"Sherman County","url":"pages/sherman-county.html"},{"lat":45.2197,"lng":-123.9728,"title":"Tillamook County","url":"pages/tillamook-county.html"},{"lat":45.7211,"lng":-119.2731,"title":"Umatilla County","url":"pages/umatilla-county.html"},{"lat":44.9631,"lng":-118.2294,"title":"Union County","url":"pages/union-county.html"},{"lat":45.2742,"lng":-117.2156,"title":"Wallowa County","url":"pages/wallowa-county.html"},{"lat":45.0073,"lng":-120.7489,"title":"Wasco County","url":"pages/wasco-county.html"},{"lat":45.3833,"lng":-122.7978,"title":"Washington County","url":"pages/washington-county.html"},{"lat":44.6556,"lng":-120.2542,"title":"Wheeler County","url":"pages/wheeler-county.html"},{"lat":45.2042,"lng":-123.1436,"title":"Yamhill County","url":"pages/yamhill-county.html"}];

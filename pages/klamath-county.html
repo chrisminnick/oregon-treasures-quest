@@ -301,15 +301,10 @@
 
 
   <script>
-    (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.googleapis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
-      key: "AIzaSyBjy8jrq0thxr3_lKfykb7LV1cVz2TBBwc",
-      v: "weekly",
-    });
-
     async function initMap() {
       const mapContainer = document.getElementById('map-container');
       
-      // Check if offline
+      // Check if offline first - before loading any Google Maps code
       if (!navigator.onLine) {
         mapContainer.innerHTML = `
           <div style="text-align: center; padding: 40px 20px;">
@@ -321,6 +316,18 @@
           </div>
         `;
         return;
+      }
+
+      // Load Google Maps API dynamically only when online
+      if (!window.google || !window.google.maps) {
+        await new Promise((resolve, reject) => {
+          (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.googleapis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+            key: "AIzaSyBjy8jrq0thxr3_lKfykb7LV1cVz2TBBwc",
+            v: "weekly",
+          });
+          // Wait a bit for the loader to initialize
+          setTimeout(resolve, 100);
+        });
       }
 
       const locations = [{ lat: 42.8684, lng: -122.1685, title: "Klamath County", url: "klamath-county.html" }];
